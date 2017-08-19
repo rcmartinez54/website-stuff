@@ -1,0 +1,41 @@
+body  {
+  font-family: monospace;
+  background-color: red
+}
+
+h1  {
+  font-style: italic;
+  font-family: comic;
+  color: white;
+  background-color: blue;
+  font-size: 500%;
+  background-position: center;
+  text-align: center;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.another-list {
+  width: 48%;
+  float: left;
+}
+
+.another-list ul {
+  width: 100%;
+}
+
+ul  {
+  width: 48%;
+  margin-top: 0;
+  float: left;
+  background-color: white;
+  font-size: 300%;
+  text-align: center;
+}
+
+img {
+  float: right;
+  width: 48%;
+}

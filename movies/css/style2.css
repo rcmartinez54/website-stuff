@@ -1,0 +1,359 @@
+body {
+  background: url(../img/movie-tickets.jpg) 0 0 repeat;
+  padding: 20px;
+}
+
+h1 {
+  font-style: oblique; color: black;
+  font-family: comic sans-serif;
+  font-size: 500%;
+  text-align: center;
+  border-style: outset;
+  align-self: center;
+  margin-left: 22px;
+  margin-right: 22px;
+  padding: inherit;
+  background: white;
+}
+
+ul {
+  font-style: oblique;
+  font-family: comic sans-serif;
+  background-color: white;
+  font-size: 350%;
+  text-align: center;
+  float: left;
+  width: 90%;
+  margin-top: 0;
+  padding: 5px;
+  border-style: outset;
+}
+
+/*.one {
+  background-color: #0000ff;
+}
+.two {
+  background-color: #1a1aff;
+}
+.three {
+  background-color: #3333ff;
+}
+.four {
+  background-color: #4d4dff;
+}
+.five {
+  background-color: #6666ff;
+}
+.six {
+  background-color: #8080ff;
+}
+.seven {
+  background-color: #9999ff;
+}
+.eight {
+  background-color: #b3b3ff;
+}
+.nine {
+  background-color: #ccccff;
+}
+.ten {
+  background-color: #e6e6ff;
+}
+.eleven {
+  background-color: #ffffff;
+}
+.twelve {
+  background-color: #e6e6ff;
+}
+.thirteen {
+  background-color: #ccccff;
+}
+.fourteen {
+  background-color: #b3b3ff;
+}
+.fifteen {
+  background-color: #9999ff;
+}
+.sixteen {
+  background-color: #8080ff;
+}
+.seventeen {
+  background-color: #6666ff;
+}
+.eighteen {
+  background-color: #4d4dff;
+}
+.nineteen {
+  background-color: #3333ff;
+}
+.twenty {
+  background-color: #1a1aff;
+}
+.twentyone {
+  background-color: #0000ff;
+}
+.twentytwo {
+  background-color: #1a1aff;
+}
+.twentythree {
+  background-color: #3333ff;
+}
+.twentyfour {
+  background-color: #4d4dff;
+}
+.twentyfive {
+  background-color: #6666ff;
+}
+.twentysix {
+  background-color: #8080ff;
+}
+.twentyseven {
+  background-color: #9999ff;
+}
+.twentyeight {
+  background-color: #b3b3ff;
+}
+.twentynine {
+  background-color: #ccccff;
+}
+.thirty {
+  background-color: #e6e6ff;
+}
+.thirtyone {
+  background-color: #ffffff;
+}
+.thirtytwo {
+  background-color: #ffe6e6;
+}
+.thirtythree {
+  background-color: #ffcccc;
+}
+.thirtyfour {
+  background-color: #ffb3b3;
+}
+.thirtyfive {
+  background-color: #ff9999;
+}
+.thirtysix {
+  background-color: #ff8080;
+}
+.thirtyseven {
+  background-color: #ff6666;
+}
+.thirtyeight {
+  background-color: #ff4d4d;
+}
+.thirtynine {
+  background-color: #ff3333;
+}
+.forty {
+  background-color: #ff1a1a;
+}
+.fortyone {
+  background-color: #ff0000
+}
+.fortytwo {
+  background-color: #ff1a1a
+}
+.fortythree {
+  background-color: #ff3333
+}
+.fortyfour {
+  background-color: #ff4d4d
+}
+.fortyfive {
+  background-color: #ff6666
+}
+.fortysix {
+  background-color: #ff8080
+}
+.fortyseven {
+  background-color: #ff9999
+}
+.fortyeight {
+  background-color: #ffb3b3
+}
+.fortynine {
+  background-color: #ffcccc
+}
+.fifty {
+  background-color: #ffe6e6
+}
+.fiftyone {
+  background-color: #ffffff
+}
+.fiftytwo  {
+  background-color: #ffffe6
+}
+.fiftythree {
+  background-color: #ffffcc
+}
+.fiftyfour {
+  background-color: #ffffb3
+}
+.fiftyfive {
+  background-color: #ffff99
+}
+.fiftysix {
+  background-color: #ffff80
+}
+.fiftyseven {
+  background-color: #ffff66
+}
+.fiftyeight {
+  background-color: #ffff4d
+}
+.fiftynine {
+  background-color: #ffff33
+}
+.sixty {
+  background-color: #ffff1a
+}
+.sixtyone {
+  background-color: #ffff00
+}
+.sixtytwo {
+  background-color: #e6e600
+}
+.sixtythree {
+  background-color: #cccc00
+}
+.sixtyfour {
+  background-color: #b3b300
+}
+.sixtyfive {
+  background-color: #999900
+}
+.sixtysix {
+  background-color: #808000
+}
+.sixtyseven {
+  background-color: #666600
+}
+.sixtyeight {
+  background-color: #4d4d00;
+}
+.sixtynine {
+  background-color: #333300;
+}
+.seventy {
+  background-color: #1a1a00;
+  color: #e6e6e6;
+}
+.seventyone {
+  background-color: #003300
+}
+.seventytwo {
+  background-color: #004d00
+}
+.seventythree {
+  background-color: #006600
+}
+.seventyfour {
+  background-color: #008000
+}
+.seventyfive {
+  background-color: #009900
+}
+.seventysix {
+  background-color: #00b300
+}
+.seventyseven {
+  background-color: #00cc00
+}
+.seventyeight {
+  background-color: #00e600
+}
+.seventynine {
+  background-color: #00ff00
+}
+.eighty {
+  background-color: #1aff1a
+}
+.eightyone {
+  background-color: #33ff33
+}
+.eightytwo {
+  background-color: #4dff4d
+}
+.eightythree {
+  background-color: #66ff66
+}
+.eightyfour {
+  background-color: #80ff80
+}
+.eightyfive {
+  background-color: #99ff99
+}
+.eightysix {
+  background-color: #b3ffb3
+}
+.eightyseven {
+  background-color: #ccffcc
+}
+.eightyeight {
+  background-color: #e6ffe6
+}
+.eightynine {
+  background-color: #ffffff
+}
+.ninety {
+  background-color: #fff6e6
+}
+.ninetyone {
+  background-color: #ffedcc
+}
+.ninetytwo {
+  background-color: #ffe4b3
+}
+.ninetythree {
+  background-color: #ffdb99
+}
+.ninetyfour {
+  background-color: #ffd280
+}
+.ninetyfive {
+  background-color: #ffc966
+}
+.ninetysix {
+  background-color: #ffc14d
+}
+.ninetyseven {
+  background-color: #ffb833
+}
+.ninetyeight {
+  background-color: #ffaf1a
+}
+.ninetynine {
+  background-color: #ffa500
+}
+.onehundred {
+  background-color: #e69500
+}*/
+
+li {
+  background: white;
+}
+
+li:nth-child(2n+2) {
+  background: blue;
+}
+
+img {
+  float: right;
+  overflow: hidden;
+  width: 48%;
+  clear: both;
+  margin-bottom: 15px;
+  border-style: outset;
+  opacity: .9;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.images {
+  padding: inherit;
+  padding-top: 0;
+}

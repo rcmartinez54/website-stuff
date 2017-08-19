@@ -1,0 +1,44 @@
+body {
+  background: url(../img/ice-background.jpg)
+}
+
+h1 {
+  align-self: center;
+  border-style: outset;
+  text-align: center;
+  color: white;
+  font-size: 500%;
+  font-family: cursive; comic sans;
+  background: url(../img/puckprint.jpg);
+}
+
+.container {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wins {
+    width: 48%;
+    position: relative;
+}
+
+.inner-wrap {
+  position: absolute;
+}
+
+.wins img {
+  opacity: .4;
+}
+
+.sharks {
+  float: left;
+}
+
+.kings {
+  float: right;
+}
+
+.kings img {
+  max-width: 745px;
+}
