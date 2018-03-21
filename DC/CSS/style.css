@@ -1,0 +1,564 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+header #top-bluebar {
+  background: #0282f9;
+  padding: 4px 0;
+}
+
+header #top-bluebar a {
+  color: #fff;
+  float: right;
+}
+
+header #main-header {
+  padding: 15px 0;
+}
+
+header #main-header img {
+  float: left;
+}
+
+header #main-header ul {
+  float: right;
+  padding: 0;
+  margin-top: 38px;
+}
+
+header #main-header ul li {
+  float: left;
+  margin-right: 35px;
+  list-style: none;
+}
+
+header #main-header ul li:last-child {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+header #main-header ul li a {
+  color: #000;
+  font-weight: 900;
+}
+
+header #main-header ul li input {
+  border: none;
+  border-bottom: 3px solid #0282f9;
+  text-align: right;
+  font-size: 18px;
+  max-width: 80px;
+}
+
+header #main-header ul li input:focus {
+  outline: none;
+  box-shadow: 0;
+}
+
+#section1 {
+  margin: 30px 0;
+  height: 395px;
+}
+
+#section1 .container {
+  height: 100%;
+}
+
+#section1 #left {
+  float: left;
+  width: 68%;
+  height: 100%;
+  background: url("../img/MisterMiracle.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#section1 #left .image-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#section1 #left .image-content h3, #section1 #right .image-content h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+#section1 #left .image-content p, #section1 #right .image-content p {
+  color: #fff;
+  margin: 0;
+}
+
+#section1 #right {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+
+#section1 #right .small-image {
+  height: 48%;
+  position: relative;
+}
+
+#section1 #right .green-lantern {
+  background: url("../img/first-look-GL.jpg") 0 0 no-repeat;
+  background-size: cover;
+  margin-bottom: 4%;
+}
+
+#section1 #right .DC-legends {
+  background: url("../img/DClegendsOfTomorrow.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+#section1 #right .small-image .image-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#section2 #featured-left {
+  float: left;
+  width: 23%;
+  margin-right: 5px;
+}
+
+#section2 #featured-center {
+  float: left;
+  width: 50%;
+  padding-left: 25px;
+}
+
+#section2 #featured-right {
+  float: right;
+  width: 23%;
+}
+
+#section2 #featured-right img {
+  height: 250px;
+}
+
+#section2 #featured h1 {
+  color: #0282f9;
+  font-size: 65px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+#section2 a {
+  color: black;
+}
+
+#section2 h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+#section3 {
+  margin-top: 30px;
+  line-height: 1em;
+}
+
+#section3 a {
+  color: black;
+}
+
+#section3 #top-left {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+#section3 #top-right {
+  width: 30%;
+  float: left;
+}
+
+#section3 #bottom-left {
+  float: left;
+  margin-left: 9px;
+  margin-right: 20px;
+}
+
+#section3 #bottom-centerleft {
+  float: left;
+  margin-right: 20px;
+}
+
+#section3 #bottom-centerright {
+  float: left;
+  margin-right: 20px;
+}
+
+#section3 #bottom-right {
+  float: left;
+}
+
+#section3 #offset-right {
+  float: right;
+  position: absolute;
+  right: 25px;
+  top: 1065px;
+}
+
+#section3 #offset-right #pull-list {
+  position: absolute;
+  top: 485px;
+  font-size: 50px;
+}
+
+#section3 #offset-right h1 {
+  color: #0282f9;
+}
+
+#section3 #offset-right h2 {
+  color: #0282f9;
+}
+
+#section3 #offset-right #flashfacts {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+}
+
+#section3 h3 {
+  color: #0282f9;
+}
+
+#section3 h4 {
+  color: #3f3f3f;
+}
+
+#section4 #top4 {
+  line-height: 1em;
+}
+
+#section4 #top4 img {
+  position: absolute;
+  top: 1820px;
+  left: 418px;
+}
+
+#section4 #top4 h1 {
+  color: #0282f9;
+  font-size: 75px;
+}
+
+#section4 #top4 h3 {
+  color: #0282f9;
+  font-size: 50px;
+}
+
+#section4 #bottom4 h1 {
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+#section4 #bottom4 a {
+  color: black;
+}
+
+#section4 #bottom4 .supermanbio, .batmanbio, .wonderwomanbio, .greenlanternbio, .flashbio, .aquamanbio, .cyborgbio {
+  float: left;
+  width: 14.2%;
+}
+/*
+#section4 #bottom4 .batmanbio {
+  float: left;
+  width: 14.2%;
+}
+
+#section4 #bottom4 .wonderwomanbio {
+  float: left;
+  width: 14.2%;
+}
+
+#section4 #bottom4 .greenlanternbio {
+  float: left;
+  width: 14.2%;
+}
+
+#section4 #bottom4 .flashbio {
+  float: left;
+  width: 14.2%;
+}
+
+#section4 #bottom4 .aquamanbio {
+  float: left;
+  width: 14.2%;
+}
+
+#section4 #bottom4 .cyborgbio {
+  float: left;
+  width: 14.2%;
+}
+*/
+#section5 {
+  margin-top: 50px;
+}
+
+#section5 a {
+  color: white;
+}
+
+#section5 .container {
+  height: 100%;
+}
+
+#section5 #top5 .top5-background img {
+  height: 837px;
+  width: 100%;
+  position: relative;
+  border-top: solid;
+  border-top-color: #0292f9;
+}
+
+#section5 #top5 .top5-content-left {
+  position: absolute;
+  left: 365px;
+  top: 2895px;
+  line-height: 1em;
+}
+
+#section5 #top5 .top5-content-left img {
+  position: absolute;
+  bottom: 550px;
+}
+
+#section5 #top5 .top5-content-right {
+  position: absolute;
+  top: 2792px;
+  right: 20px;
+}
+
+#section5 #top5 .top5-content-left h2 {
+  color: #0292f9;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+#section5 #top5 .top5-content-left h1 {
+  font-size: 64px;
+  font-weight: bolder;
+  color: white;
+}
+
+#section5 #top5 .top5-content-left p {
+  font-size: 19px;
+  color: white;
+}
+
+#section5 #top5 .top5-content-left button {
+  background-color: #0292f9;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  width: 150px;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+#section5 #bottom5 {
+  color: white;
+  background-color: #0292f9;
+  height: 65px;
+}
+
+#section5 #bottom5 h3 {
+  color: white;
+  float: left;
+  margin-left: 195px;
+  margin-right: 50px;
+}
+
+#section6 .container {
+  width: 1050px;
+}
+
+#section6 #section6-header h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #0292f9;
+}
+
+#section6 a {
+  color: black;
+}
+
+#section6 #section6-top {
+  margin-bottom: 30px;
+}
+
+#section6-top, .section6-top-content {
+  height: 465px;
+}
+
+#section6-top .section6-top-content .DCtogether {
+  float: left;
+  pos
+}
+
+#section6-top .section6-top-content .DCtogether img {
+  height: 462px;
+}
+
+#section6-top .section6-top-content .social-media {
+  padding: 15px;
+  position: absolute;
+  width: 4%;
+}
+
+#section6-top .section6-top-content .social-media img {
+  width: 30px;
+}
+
+#section6-top .freakyFriday {
+  float: right;
+}
+
+#section6-top .freakyFriday img {
+  width: 310px;
+}
+
+#section6-top .freakyFriday-text {
+  float: right;
+  line-height: 1em;
+  font-size: 14px;
+  background-color: #0292f9;
+  padding: 0 5px 5px;
+}
+
+#section6-top .freakyFriday-text .freakyFriday-text-content .freakyFridayh1top {
+  margin-bottom: 0px;
+}
+
+#section6 .bottom6-content .bottom6-content-left, #section6 .bottom6-content .bottom6-content-middle, #section6 .bottom6-content .bottom6-content-right {
+  width: 33.3%;
+  float: left;
+  line-height: 1em;
+  font-size: 14px;
+  margin-right: 0px;
+}
+
+#section6 .bottom6-content .bottom6-content-right img {
+  height: 225px;
+  width: 100%;
+}
+
+#section6 h1 {
+  margin-bottom: 35px;
+}
+
+#footer-top {
+  background-image: url('../img/JLfooter.jpg');
+  background-size: cover;
+  margin-top: 480px;
+  position: relative;
+}
+
+footer .clearfix {
+  color: white;
+  padding-left: 60px;
+}
+
+#footer-top h3 {
+  font-size: 14px;
+}
+
+#footer-top a {
+  color: white;
+}
+
+footer .left-text-column, .center-text-column, .right-text-column {
+  float: left;
+  line-height: 1em;
+  margin-left: 25px;
+  font-size: 15px;
+  padding-top: 35px;
+}
+
+footer .footerLogo img {
+  height: 400px;
+  float: right;
+  padding-top: 100px;
+  padding-right: 235px;
+}
+
+footer .footerBatman {
+  position: absolute;
+  left: 600px;
+}
+
+footer .footerLex {
+  position: absolute;
+  right: 20px;
+  bottom: 495px;
+}
+
+#footer-bottom {
+  background-color: darkslategray;
+}
+
+#footer-bottom img {
+  height: 40px;
+}
+
+#footer-bottom .footer-bottom-content {
+  height: 182px;
+}
+
+#footer-bottom .footer-button {
+  width: 12%;
+  margin-left: 80px;
+  padding-top: 60px;
+}
+
+#footer-bottom button {
+  background-color: #0292f9;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  width: 150px;
+  border: solid black;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+#footer-bottom .footer-socialmedia {
+  width: 30%;
+  float: right;
+}

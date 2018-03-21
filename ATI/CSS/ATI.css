@@ -1,0 +1,510 @@
+/*---- Universal rules  ---*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Candal', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  box-shadow: 2px 5px 10px black;
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrap {
+  width: 95%;
+  margin: auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/*--- Navigation bar  ---*/
+
+header {
+  background-color: orange;
+  padding: .625em;
+  box-shadow: 1px 2px 10px black;
+  position: fixed;
+  width: 75em;
+  top: 0;
+}
+
+.header img {
+  display: inline;
+  border-radius: 50%;
+  width: 10%;
+  box-shadow: 2px 2px 10px black;
+}
+
+.header nav {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  padding-top: 45px;
+}
+
+nav ul {
+  margin: 0;
+  display: inline;
+  padding-right: 1.125em;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 45px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.header ul li {
+  padding-left: 2.25em;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 96%;
+  }
+  .header img {
+    display: none;
+  }
+  .header ul li {
+    padding-left: 0;
+  }
+  nav {
+    padding: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    text-decoration: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: .10em;
+  }
+  nav li {
+    background-color: lightgray;
+    border-radius: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: .60em;
+    list-style: none;
+    width: 90%;
+  }
+  nav a {
+    padding: 1em;
+    text-decoration: none;
+  }
+  /*
+  .banner h3 {
+    padding-top: 35em;
+    padding-left: 1.8em;
+    font-size: .95em;
+  }
+  */
+  .section-one-wrapper {
+    width: 100%;
+  }
+  .amenities {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .header img {
+    display: none;
+  }
+  .nav ul {
+    text-align: center;
+  }
+  .nav ul li {
+    list-style: none;
+  }
+}
+
+/*--- Top banner  ---*/
+
+.banner {
+  background: url("../img/ATI-logo.jpg")no-repeat center center;
+  background-size: 70%;
+  height: 43.75em;
+}
+
+div.banner-text {
+  padding-top: 9.375em;
+}
+
+@media (max-width: 480px) {
+  div.banner-text {
+    padding-top: 30em;
+  }
+  div.banner-text h3 {
+    margin-left: 1em;
+  }
+}
+
+/*--- Section one  ---*/
+
+.section-one-wrapper {
+  padding: 5px 10px;
+  margin-bottom: 1.25em;
+  background-color: #e6e6e6;
+}
+
+.section-one .astym {
+  width: 100%;
+}
+
+.astym p::first-letter {
+  float: left;
+  font-size: 5em;
+  color: white;
+  padding: 5px 10px;
+  background: orange;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.section-one .astym img {
+  float: right;
+  width: 48%;
+  margin: 15px 15px;
+}
+
+@media (max-width: 480px) {
+  div.astym {
+    font-size: 1.125em;
+  }
+  .astym p::first-letter {
+    font-size: 2em;
+  }
+}
+
+/*--- Middle Banner  ---*/
+
+.DYK .middle-banner {
+  background-color: orange;
+  text-transform: uppercase;
+  padding: 40px 50px;
+  box-shadow: 2px 5px 10px black;
+}
+
+.DYK .middle-banner-img img {
+  border-radius: 1%;
+  box-shadow: 2px 7px 20px black;
+  width: 45%;
+  float: left;
+}
+
+.DYK .middle-banner-text {
+  width: 45%;
+  float: right;
+}
+
+@media (max-width: 770px) {
+  .DYK .middle-banner {
+    width: 100%;
+    padding: 5px 5px;
+  }
+  .DYK .middle-banner-img img {
+    float: none;
+    width: 100%;
+  }
+  .DYK .middle-banner-text {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/*------ Amenities Section  ------------*/
+
+section.amenities {
+  margin-top: 2em;
+}
+
+div.responsive {
+  padding: 6px 6px;
+  float: left;
+  width: 33.33333%;
+  margin-top: 1.5em;
+}
+
+div.responsive:hover {
+  background-color: gray;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  border-radius: 2px;
+}
+
+div.gallery img:hover {
+  border: 3px solid orange;
+}
+
+div.gallery {
+  height: 100%;
+}
+
+div.image-container {
+  height: 500px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.text-container {
+  height: 18.75em;
+}
+
+div.text-container p {
+  height: 100%;
+}
+
+@media (max-width: 770px) {
+  div.responsive {
+    width: 49.999999%;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  div.responsive {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+
+/*
+.amenities {
+  padding: 20px 20px;
+}
+
+.amenities .gym {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: lightgray;
+  padding: 5px 10px;
+}
+
+.amenities .gym img {
+  width: 100%;
+}
+
+.amenities .lap-pool {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: lightgray;
+  padding: 5px 10px;
+}
+
+.amenities .lap-pool img {
+  width: 100%;
+}
+
+.amenities .volleyball {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: lightgray;
+  padding: 5px 10px;
+}
+
+.amenities .volleyball img {
+  width: 100%;
+}
+*/
+
+/*--- Workshop Section ---*/
+
+section.workshop {
+  height: 100%;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  box-shadow: 2px 5px 10px black;
+}
+
+div.workshop-text {
+  float: left;
+  width: 70%;
+  background-color: lightgray;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.workshop-date {
+  float: left;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  background-color: orange;
+}
+
+div.workshop-date h1 {
+  margin: 0 auto;
+  font-size: 5em;
+}
+
+div.workshop-date p {
+  font-size: 12em;
+  margin: 0 auto;
+  padding-bottom: .055em;
+}
+
+@media (max-width: 480px) {
+  div.workshop-text {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  div.workshop-date {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  div.workshop-text h1 {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  div.workshop-text h2 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  div.workshop-text {
+    width: 100%;
+  }
+  div.workshop-date {
+    width: 100%;
+    float: none;
+    background: linear-gradient(to bottom, orange, lightgray);
+  }
+}
+
+/*--- Form section  ---*/
+
+section.form-section {
+  margin-top: 20px;
+}
+
+div.form {
+  float: left;
+  width: 48%;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  background-color: orange;
+  box-shadow: 2px 5px 15px black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form fieldset {
+  width: 47%;
+  margin: auto;
+}
+
+form h1 {
+  width: 47%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+div.form-pic {
+  float: left;
+  width: 48%;
+}
+
+div.form-pic img {
+  width: 100%;
+  height:480px;
+  border-radius: 5%;
+}
+
+figcaption {
+  padding: 10px 15px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  div.form {
+    width: 100%;
+  }
+  div.form-pic {
+    float: none;
+    width: 100%;
+  }
+  div.form-pic img {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 75%;
+    margin-left: 2.525em;
+    margin-top: 3em;
+  }
+  div.form-pic figcaption {
+    margin-bottom: 3em;
+  }
+  form fieldset {
+    width: 80%;
+  }
+  form h1 {
+    width: 80%;
+  }
+}
+
+footer {
+  background-color: lightgray;
+  height: 150px;
+  margin-top: 2em;
+}
+
+.footer-text {
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
