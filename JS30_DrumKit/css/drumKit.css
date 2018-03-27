@@ -1,0 +1,44 @@
+
+body {
+	background: url('../img/drums.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.keys {
+	display: flex;
+	flex: 1; 
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.key {
+	border-radius: .2em;
+	display: block;
+	margin: 1em;
+	padding: 1em .5em;
+	transition: all .07s ease;
+	border: solid white;
+	width: 5em;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 .5em black;
+}
+
+kbd {
+	display: block;
+	font-size: 3em;
+	text-align: center;
+}
+
+.sound {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: yellow; 
+	box-shadow: 0 0 1em yellow;
+}
