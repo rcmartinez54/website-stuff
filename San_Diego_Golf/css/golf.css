@@ -1,0 +1,736 @@
+/*-------Universal------------*/
+
+* {
+	font-family: 'Poppins', sans-serif;
+	}
+
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin-top: 0;
+}
+
+body {
+	margin: 0 auto;
+}
+
+/*
+#scorecard {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#scorecard img {
+	width: 60%;
+	transition: width .3s;
+}
+
+#scorecard img:hover {
+	width: 100%;
+}
+
+#scorecard h3 {
+	font-size: 1em;
+}
+*/
+
+/*--------Wrappers--------------*/
+
+#wrapper {
+	margin: 0 auto;
+	max-width: 81.25em;
+	
+}
+
+.content {
+	width: 90%;
+	margin: auto;
+}
+
+/*-------Navigation------------*/
+
+nav {
+	position: fixed;
+	width: 81.25em;
+	top: 0;
+	margin: auto;
+	text-align: center;
+	z-index: 1;
+}
+
+
+ul {
+	list-style-type: none;
+	margin-top: 0;
+	padding: 10px 0px;
+	overflow: hidden;
+	background-color: limegreen;
+}
+
+.scroll {
+	list-style-type: none;
+	margin-top: 0;
+	padding: 10px 0px;
+	overflow: hidden;
+	background-color: black;
+	-webkit-transition: all 2s;
+}
+
+ul li {
+	display: inline-block;
+}
+
+li a {
+	text-transform: uppercase;
+	color: black;
+	padding: 14px 16px;
+	transistion: background-color .3s;
+}
+
+.scroll2 {
+	ext-transform: uppercase;
+	color: white;
+	padding: 14px 16px;
+	transistion: background-color .3s;
+}
+
+li a:hover {
+	background-color: green;
+	color: white;
+}
+
+//Hidden dropdown menu for media queries
+
+select {
+	display: none;
+}
+
+.select_heading {
+	float: left;
+	margin-left: 20px;
+}
+
+select {
+	float: right;
+	margin: 26px 20px;
+	font-size: 1.2em;
+	display: none;
+}
+
+@media (max-width: 960px) {
+	nav ul {
+		display: none;
+	}
+
+	.select_container {
+		background-color: limegreen;
+   		font-size: 1.2em;
+   		text-shadow: 2px 2px 10px white;
+   		display: inline-block;
+   		width: 100%;
+   		position: fixed;
+   		top: 0;
+   		z-index: 1;
+	}
+
+	select {
+		display: inline-block;
+		float: right;
+	}
+}
+
+
+
+/*
+#dropdwn {
+		position: absolute;
+		display: inline-block;
+	}
+
+.dropbtn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: green;
+}
+
+.dropdown_content {
+	display: none;
+	position: absolute;
+	top: 68px;
+	right: 5px;
+	background-color: green;
+	max-width: 160px;
+	z-index: 1;
+}
+
+.dropdown_content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	font-size: 0.95em;
+}
+
+.dropdown_content a:hover {
+	background-color: green;
+}
+
+.show {
+	display: block;
+}
+*/
+
+
+
+
+
+/*---------Header--------------*/
+
+#header_title_mt {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/golf_cover.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+#header_title_coronado {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/coronado_gc.jpg') no-repeat;
+	background-size: cover;
+}
+
+#header_title_bonita {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/bonita_gc.jpg') no-repeat;
+	background-size: cover;
+}
+
+#header_title_mb {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/night_golf.jpg') no-repeat;
+	background-size: cover;
+}
+
+#header_title_gh {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/goat_hill.jpg') no-repeat;
+	background-size: cover;
+}
+
+#header_title_gh img {
+	width: 10%;
+	border: solid;
+	border-radius: 50%;
+	float: right;
+	margin-right: 30px;
+	margin-top: 235px;
+}
+
+#header_title_cmr {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/cmr_gc.jpg') no-repeat;
+	background-size: cover;
+}
+
+#header_title_rw {
+	height: 550px;
+	margin: 0 auto;
+	background: url('../img/riverwalk_gc.jpg') no-repeat;
+	background-size: contain;
+}
+
+.banner {
+	position: relative;
+	color: white;
+}
+
+.banner h1 {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	font-size: 2.25em;
+	text-shadow: 2px 2px 10px black;	
+	z-index: 0;
+}
+
+.banner h2 {
+	text-align: right;
+	padding-top: 300px;
+	padding-right: 40px;
+	font-size: 3em;
+	text-shadow: 2px 2px 10px white;
+	color: black;
+	font-weight: bolder;
+	text-transform: capitalize;
+}
+
+@media (max-width: 960px) {
+
+	#header_title_mt {
+		margin-top: 85px;
+	}
+
+	.banner h1 {
+		display: none;
+	}
+}
+
+/*--------ads----------*/
+
+#ads {
+	height: 189px;
+	text-align: center;
+	background: lightblue;
+}
+
+#ads img {
+	width: 50%;
+	padding-top: 5px;
+}
+
+#ads h4 {
+	margin-top: 0;
+}
+
+@media (max-width: 600px) {
+	#ads {
+		height: 105px;
+	}
+}
+
+
+#scorecard {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#scorecard img {
+	width: 60%;
+	transition: width .3s;
+}
+
+#scorecard img:hover {
+	width: 100%;
+}
+
+#scorecard h3 {
+	font-size: 1em;
+}
+
+
+
+
+/*---------Content---------*/
+
+#section_wrap {
+	margin-top: 70px;
+}
+
+#intro {
+	margin-top: 25px;
+}
+
+#MT {
+	background: limegreen;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	font-size: 3em;
+	border: 1px solid black;
+}
+
+.hole {
+	margin-bottom: 25px;
+}
+
+.hole:hover {
+	background-color: #f2f2f2;
+	box-shadow: 2px 2px 10px black;
+}
+
+.hole_imgs {
+	width: 50%;
+	height: 400px;
+	float: left;
+}
+
+#hole_text {
+	float: left;
+	width: 46%;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 0;
+}
+
+.hole_map {
+	margin: 20px;
+	box-shadow: 2px 2px 10px black;
+}
+
+.hole_map:hover {
+	width: 10%;
+}
+
+@media (max-width: 640px) {
+
+	#section_wrap {
+		width: 100%;
+		margin-top: 25px;
+	}
+
+	#hole_text {
+		float: none;
+		width: 100%;
+		font-size: .9em;
+		padding: 0;
+	}
+
+	#hole_text p {
+		margin: 5px 12px;
+	}
+
+	.hole_imgs {
+		float: none;
+		width: 100%;
+	}
+
+	.intro {
+		margin: 0 12px;
+	}
+
+	#MT {
+		padding-top: 0;
+		padding-bottom: 0;
+		font-size: 2em;
+	}
+}
+
+/*-------Mission Trails---------*/
+
+
+#hole1_imgs {
+	background: url('../img/mt_tee1.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole2_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole3_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;	
+	background-size: cover;
+}
+
+#hole4_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole5_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole6_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole7_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole8_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole9_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole10_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole11_imgs {
+	background: url('../img/mt_tee11.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole12_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole13_imgs {
+	background: url('../img/mt_hole13.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole14_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole15_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole16_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole17_imgs {
+	background: url('../img/mt_hole17.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole18_imgs {
+	background: url('../img/mt_placeholder_img.jpg') no-repeat;
+	background-size: cover;
+}
+
+/*-------Coronado------------*/
+
+#coronado{
+	background-image: url('..img/coronado_gc.jpg') no-repeat;
+}
+
+#hole1_cor_imgs,#hole2_cor_imgs,#hole3_cor_imgs,#hole4_cor_imgs,#hole5_cor_imgs,#hole6_cor_imgs,#hole7_cor_imgs,#hole8_cor_imgs,#hole9_cor_imgs,#hole10_cor_imgs,
+#hole11_cor_imgs,#hole12_cor_imgs,#hole13_cor_imgs,#hole14_cor_imgs,#hole15_cor_imgs,#hole16_cor_imgs,#hole17_cor_imgs,
+#hole18_cor_imgs {
+	background: url('../img/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+/*
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+
+#hole1_cor_imgs {
+	background: url('../Desktop/coronado_placeholder.jpg') no-repeat;
+	background-size: cover;
+}
+*/
+
+
+/*---------Course Sign-up-------*/
+
+#join {
+	box-shadow: 2px 2px 10px black;
+	background: lightblue;
+}
+
+#mt_signup {
+	float: left;
+}
+
+#mt_signup img {
+	float: left;
+}
+
+.social_media {
+	float: right;
+	height: 50px;
+	width: 50px;
+	margin-top: 70px;
+	margin-left: 35px;
+}
+
+.social_media:hover {
+	height: 55px;
+	width: 55px;
+	box-shadow: 2px 2px 10px black;
+	border-radius: 50%;
+}
+
+#ads_btn {
+	margin-top: 85px;
+	margin-left: 100px;
+}
+
+#coronado_signup {
+	text-align: center;
+}
+
+.bonita_su {
+	width: 100%;
+	text-align: center;
+}
+
+.mb_su {
+	width: 100%;
+	text-align: center;
+}
+
+.mb_su img {
+	margin: 10px;
+}
+
+#gh_signup {
+	text-align: center;
+}
+
+#gh_signup img {
+	width: 10%;
+	padding-top: 10px;
+}
+	
+#cmr_signup {
+	text-align: center;
+}
+
+#rw_signup {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#rw_signup img {
+	width: 15%;
+}
+
+@media (max-width: 600px) {
+
+	#join {
+		width: 80%;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.social_media {
+		display: none;
+	}
+	#date {
+		display: none;
+	}
+	#mt_signup {
+		float: none;
+		text-align: center;
+	}
+	#mt_signup img {
+		float: none;
+	}
+	#mt_signup button {
+		margin: 20px 0;
+	}
+}
+
+/*---------Footer-----------*/
+
+footer {
+	color: white;
+	background: black;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
