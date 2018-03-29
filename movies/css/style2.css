@@ -1,5 +1,5 @@
 body {
-  background: url(../img/movie-tickets.jpg) 0 0 repeat;
+  
   padding: 20px;
 }
 
@@ -23,10 +23,10 @@ ul {
   font-size: 350%;
   text-align: center;
   float: left;
-  width: 90%;
+  width: 100%;
   margin-top: 0;
   padding: 5px;
-  border-style: outset;
+  
 }
 
 /*.one {
@@ -339,21 +339,8 @@ li:nth-child(2n+2) {
   background: blue;
 }
 
-img {
-  float: right;
-  overflow: hidden;
-  width: 48%;
-  clear: both;
-  margin-bottom: 15px;
-  border-style: outset;
-  opacity: .9;
-}
 
 .list {
   overflow: hidden;
 }
 
-.images {
-  padding: inherit;
-  padding-top: 0;
-}
