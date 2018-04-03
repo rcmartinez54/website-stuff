@@ -43,6 +43,16 @@
 				<a href="https://www.golfnow.com/tee-times/search#qc=GeoLocation&q=&ratetype=all&sortby=Facilities.Weight&view=Course&date=Sat+Mar+24+2018&radius=40&timemax=42&timemin=10&players=0&longitude=-117.15726&latitude=32.71533" target="_blank"><img src="img/golfnow.png"></a>
 				<h4>click here to get current deals on San Diego courses</h4>
 			</div>
+			<div id="get_weather" class="clearfix">
+					<div><button class="get_weather">is this golf weather?</button></div>
+						<div id="result">
+					    	<div id="icon"></div>
+					    	<div id="city"><strong></strong></div>
+					    	<div id="weather"></div>
+					    	<div id="time"></div>
+					    	<div><button class="hide">Hide</button></div>
+						</div>
+				</div>
 			<div id="section_wrap" class="content clearfix">
 				<section id="intro" class="me">
 					<p class="intro">Hello everyone! My name is Raymond Martinez and I love to play golf. I may not make the tour anytime soon, or ever, but one of my favorite things to do is tee it up. I recently moved to San Diego from San Jose and the golf here is amazing. My current home course, where I am a member of the Players Club, is Mission Trails GC which is located at the base of Cowles Mountain. It is hard not to play there because of the insane deal you get on green fees but I still get out and try new courses. My favorite course to play so far here in San Diego is Cornando Municipal GC (sorry Mission Trails, I love the ocean!).</p>
@@ -133,24 +143,9 @@
 					<a href="https://www.golfzing.com/pcmissiontrails" target="_blank"><img src="img/mt_pc.png"></a>
 				</div>
 				<div id="join_buttons">		
-					<button id="ads_btn"><a href="https://www.missiontrailsgc.com/golf-tee-times?quicktabs_3=0&dt=20180313&st=0500&et=0600" target="_blank">BOOK A TEE TIME!</a></button>
-					<button id="date" onclick="displayDate()">Get Today's Date</button>	
-				</div>
-				<div id="social_media" class="clearfix">
-					<a href="https://twitter.com/Missiontrailsgc" target="_blank"><img class="social_media twitter" src="img/twitter1.png"></a> 
-					<a href="https://www.facebook.com/missiontrailsgc/" target="_blank"><img class="social_media facebook" src="img/facebook.png"></a> 
+					<button id="ads_btn"><a href="https://www.missiontrailsgc.com/golf-tee-times?quicktabs_3=0&dt=20180313&st=0500&et=0600" target="_blank">BOOK A TEE TIME!</a></button>	
 				</div>
 			</div>
-			<div id="get_weather" class="clearfix">
-				<div><button class="get_weather">show me the weather</button></div>
-					<div id="result" style="display: none">
-					    <div id="icon"></div>
-					    <div id="city"><strong></strong></div>
-					    <div id="weather"></div>
-					    <div id="time"></div>
-					    <div><button class="hide">Hide</button></div>
-					</div>
-				</div>
 			<div id="section_wrap" class="content clearfix">
 				<section id="course_one" class="courses clearfix">
 					<div id="hole_10" class="hole clearfix">
@@ -229,6 +224,10 @@
 			</div>
 			<footer>
 				<h2 id="footer">All Rights Reserved.</h2>
+				<div id="social_media" class="clearfix">
+					<a href="https://twitter.com/Missiontrailsgc" target="_blank"><img class="social_media twitter" src="img/twitter1.png"></a> 
+					<a href="https://www.facebook.com/missiontrailsgc/" target="_blank"><img class="social_media facebook" src="img/facebook.png"></a> 
+				</div>
 			</footer>
 		</div>
 	</body>
