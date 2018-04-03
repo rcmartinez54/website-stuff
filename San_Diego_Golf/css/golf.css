@@ -23,26 +23,6 @@ body {
 	margin: 0 auto;
 }
 
-/*
-#scorecard {
-	text-align: center;
-	margin-bottom: 15px;
-}
-
-#scorecard img {
-	width: 60%;
-	transition: width .3s;
-}
-
-#scorecard img:hover {
-	width: 100%;
-}
-
-#scorecard h3 {
-	font-size: 1em;
-}
-*/
-
 /*--------Wrappers--------------*/
 
 #wrapper {
@@ -74,6 +54,7 @@ ul {
 	padding: 10px 0px;
 	overflow: hidden;
 	background-color: limegreen;
+	box-shadow: 1px 1px 10px green;
 }
 
 .scroll {
