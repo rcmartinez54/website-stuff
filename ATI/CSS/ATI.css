@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Candal', sans-serif;
 }
 
 a {
@@ -11,8 +10,7 @@ a {
 }
 
 img {
-  box-shadow: 2px 5px 10px black;
-  border: 1px solid black;
+  
 }
 
 .container {
@@ -20,7 +18,7 @@ img {
   margin: 0 auto;
 }
 
-.clearfix {
+.clearfix::before {
   overflow: hidden;
 }
 
@@ -36,16 +34,20 @@ img {
 }
 
 body {
+  font-family: 'Dosis', sans-serif;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*--- Navigation bar  ---*/
 
 header {
-  background-color: orange;
-  padding: .625em;
-  box-shadow: 1px 2px 10px black;
+  background-color: white;
+  padding: .625em 0;
   position: fixed;
   width: 75em;
   top: 0;
@@ -53,9 +55,7 @@ header {
 
 .header img {
   display: inline;
-  border-radius: 50%;
   width: 10%;
-  box-shadow: 2px 2px 10px black;
 }
 
 .header nav {
@@ -64,7 +64,7 @@ header {
 
 nav {
   float: right;
-  padding-top: 45px;
+  padding-top: 15px;
 }
 
 nav ul {
@@ -82,6 +82,16 @@ nav ul li {
 
 nav a {
   text-decoration: none;
+  padding-bottom: 0;
+  border-bottom: 2px solid transparent;
+  color: #000;
+  transition: all .3s;
+}
+
+nav a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fa8000;
+  color: #fa8000;
 }
 
 .header ul li {
@@ -152,20 +162,29 @@ nav a {
 /*--- Top banner  ---*/
 
 .banner {
-  background: url("../img/ATI-logo.jpg")no-repeat center center;
-  background-size: 70%;
-  height: 43.75em;
+  background-image: url('../img/banner_background.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
-div.banner-text {
-  padding-top: 9.375em;
+.banner h2 {
+  padding-top: 3.375em;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.banner h2 span {
+  display: block;
+  font-size: 30px;
 }
 
 @media (max-width: 480px) {
   div.banner-text {
     padding-top: 30em;
   }
-  div.banner-text h3 {
+  div.banner-text h2 {
     margin-left: 1em;
   }
 }
@@ -175,14 +194,15 @@ div.banner-text {
 .section-one-wrapper {
   padding: 5px 10px;
   margin-bottom: 1.25em;
-  background-color: #e6e6e6;
+  background: linear-gradient(orange, white);
 }
 
 .section-one .astym {
-  width: 100%;
+  width: 95%;
+  padding: 10px;
 }
 
-.astym p::first-letter {
+.astym #drop-cap:first-letter {
   float: left;
   font-size: 5em;
   color: white;
@@ -191,6 +211,7 @@ div.banner-text {
   margin: 10px 10px 0 0;
   border-radius: 5px;
   line-height: 1;
+  border: 2px solid black;
 }
 
 .section-one .astym img {
@@ -214,7 +235,6 @@ div.banner-text {
   background-color: orange;
   text-transform: uppercase;
   padding: 40px 50px;
-  box-shadow: 2px 5px 10px black;
 }
 
 .DYK .middle-banner-img img {

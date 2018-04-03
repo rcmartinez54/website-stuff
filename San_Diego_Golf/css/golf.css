@@ -133,6 +133,7 @@ select {
 
 	.select_container {
 		background-color: limegreen;
+		border-bottom: 1px solid forestgreen;
    		font-size: 1.2em;
    		text-shadow: 2px 2px 10px white;
    		display: inline-block;
@@ -318,9 +319,9 @@ select {
 	margin-top: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
 	#ads {
-		height: 105px;
+		height: 145px;
 	}
 }
 
@@ -371,7 +372,7 @@ select {
 
 .hole:hover {
 	background-color: #f2f2f2;
-	box-shadow: 2px 2px 10px black;
+	
 }
 
 .hole_imgs {
@@ -384,8 +385,12 @@ select {
 	float: left;
 	width: 46%;
 	padding-left: 20px;
-	padding-right: 10px;
+	padding-right: 0px;
 	padding-top: 0;
+}
+
+#hole_text p {
+	margin: 10px 10px;
 }
 
 .hole_map {
@@ -397,7 +402,7 @@ select {
 	width: 10%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 960px) {
 
 	#section_wrap {
 		width: 100%;
@@ -628,16 +633,29 @@ select {
 /*---------Course Sign-up-------*/
 
 #join {
-	box-shadow: 2px 2px 10px black;
 	background: lightblue;
+	margin-bottom: 0;
 }
 
 #mt_signup {
 	float: left;
+	width: 20%;
 }
 
 #mt_signup img {
 	float: left;
+}
+
+#join_buttons {
+	float: left;
+	width: 53%;
+	text-align: center;
+}
+
+#social_media {
+	padding-right: 20px;
+	float: right;
+	width: 20%;
 }
 
 .social_media {
@@ -656,8 +674,29 @@ select {
 }
 
 #ads_btn {
-	margin-top: 85px;
+	padding: 20px 20px;
+	margin-top: 65px;
 	margin-left: 100px;
+}
+
+#ads_btn a {
+	color: black;
+}
+
+#date {
+	padding: 20px 20px;
+    margin-left: 20px;
+}
+
+
+#get_weather {
+	text-align: center;
+    background: limegreen;
+    padding: 20px;
+}
+
+.get_weather {
+	text-transform: uppercase;
 }
 
 #coronado_signup {
@@ -700,13 +739,24 @@ select {
 	width: 15%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
 
 	#join {
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		padding-top: 20px;
 	}
+
+	#join_buttons {
+		width: 100%;
+	}
+
+	#ads_btn{
+		margin-left: 0;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
 	.social_media {
 		display: none;
 	}
@@ -719,6 +769,7 @@ select {
 	}
 	#mt_signup img {
 		float: none;
+		margin-left: 156px;
 	}
 	#mt_signup button {
 		margin: 20px 0;
