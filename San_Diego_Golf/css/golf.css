@@ -133,6 +133,7 @@ select {
 
 	.select_container {
 		background-color: limegreen;
+		border-bottom: 1px solid forestgreen;
    		font-size: 1.2em;
    		text-shadow: 2px 2px 10px white;
    		display: inline-block;
@@ -318,9 +319,9 @@ select {
 	margin-top: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
 	#ads {
-		height: 105px;
+		height: 145px;
 	}
 }
 
@@ -401,7 +402,7 @@ select {
 	width: 10%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 960px) {
 
 	#section_wrap {
 		width: 100%;
@@ -633,18 +634,28 @@ select {
 
 #join {
 	background: lightblue;
+	margin-bottom: 0;
 }
 
 #mt_signup {
 	float: left;
+	width: 20%;
 }
 
 #mt_signup img {
 	float: left;
 }
 
+#join_buttons {
+	float: left;
+	width: 53%;
+	text-align: center;
+}
+
 #social_media {
-	margin-right: 50px;
+	padding-right: 20px;
+	float: right;
+	width: 20%;
 }
 
 .social_media {
@@ -664,9 +675,6 @@ select {
 
 #ads_btn {
 	padding: 20px 20px;
-    background: limegreen;
-    border: 1px solid;
-    border-radius: 5px;
 	margin-top: 65px;
 	margin-left: 100px;
 }
@@ -677,10 +685,18 @@ select {
 
 #date {
 	padding: 20px 20px;
-    background: limegreen;
-    border: 1px solid;
-    border-radius: 5px;
     margin-left: 20px;
+}
+
+
+#get_weather {
+	text-align: center;
+    background: limegreen;
+    padding: 20px;
+}
+
+.get_weather {
+	text-transform: uppercase;
 }
 
 #coronado_signup {
@@ -723,13 +739,24 @@ select {
 	width: 15%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 960px) {
 
 	#join {
-		width: 80%;
+		width: 100%;
 		margin: auto;
 		padding-top: 20px;
 	}
+
+	#join_buttons {
+		width: 100%;
+	}
+
+	#ads_btn{
+		margin-left: 0;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
 	.social_media {
 		display: none;
 	}
@@ -742,6 +769,7 @@ select {
 	}
 	#mt_signup img {
 		float: none;
+		margin-left: 156px;
 	}
 	#mt_signup button {
 		margin: 20px 0;

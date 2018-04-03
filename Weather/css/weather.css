@@ -1,0 +1,26 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	height: 100vh;
+	padding-top: 85px;
+	background-image: url('../img/beach.jpeg');
+	background-size: cover;
+}
+
+h1 {
+	color: cadetblue;
+}
+
+#result {
+	font-size: 40px;
+}
+
+.get_weather {
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 15px grey;
+    background: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: lightcyan;
+}
