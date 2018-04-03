@@ -31,9 +31,10 @@ body {
 	
 }
 
-.content {
-	width: 90%;
+#section_wrap {
+	width: 95%;
 	margin: auto;
+	margin-top: 70px;
 }
 
 /*-------Navigation------------*/
@@ -330,10 +331,6 @@ select {
 
 /*---------Content---------*/
 
-#section_wrap {
-	margin-top: 70px;
-}
-
 #intro {
 	margin-top: 25px;
 }
@@ -367,7 +364,7 @@ select {
 
 #hole_text {
 	float: left;
-	width: 46%;
+	width: 48%;
 	padding-left: 20px;
 	padding-right: 0px;
 	padding-top: 0;
