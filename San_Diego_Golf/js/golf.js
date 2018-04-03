@@ -77,5 +77,6 @@ jQuery(function($){
       e.preventDefault();
       $('#result').hide();
       $('button.get_weather').show();
+      console.log('Fuck off');
     })
   })
