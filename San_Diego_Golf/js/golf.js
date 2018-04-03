@@ -55,6 +55,8 @@ window.onclick = function(e) {
     }
 }
 
+
+// Gets current weather from WUnderground
 jQuery(function($){
     function getWeather(){
       $.ajax('http://api.wunderground.com/api/a52847f154aa6347/conditions/q/CA/San_Diego.json', {
@@ -79,3 +81,8 @@ jQuery(function($){
       $('button.get_weather').show();
     })
   })
+
+
+
+
+    
