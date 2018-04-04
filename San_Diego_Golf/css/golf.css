@@ -35,6 +35,7 @@ body {
 	width: 95%;
 	margin: auto;
 	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 /*-------Navigation------------*/
@@ -307,6 +308,7 @@ select {
 	}
 }
 
+/*-----Scorecard--------*/
 
 #scorecard {
 	text-align: center;
@@ -326,9 +328,6 @@ select {
 	font-size: 1em;
 }
 
-
-
-
 /*---------Content---------*/
 
 #intro {
@@ -336,7 +335,7 @@ select {
 }
 
 #MT {
-	background: url('../img/putting_green.jpeg');
+	background: url('../img/putting_green.jpg');
 	background-size: cover;
 	text-align: center;
 	margin: 0 0 10px 0;
@@ -614,7 +613,7 @@ select {
 /*---------Course Sign-up-------*/
 
 #join {
-	background: url('../img/putting_green.jpeg');
+	background: url('../img/putting_green.jpg');
 	background-size: cover;
 	margin-bottom: 0;
 }
@@ -689,11 +688,17 @@ select {
 
 #coronado_signup {
 	text-align: center;
+	height: 196px;
+}
+
+#coronado_signup img {
+	margin-top: 40px;
 }
 
 .bonita_su {
 	width: 100%;
 	text-align: center;
+	height: 196px;
 }
 
 .mb_su {
