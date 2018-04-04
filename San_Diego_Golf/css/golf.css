@@ -369,8 +369,8 @@ select {
 	padding-top: 0;
 }
 
-#hole_text p {
-	margin: 10px 10px;
+#hole_text p, h2, h3, h4 {
+	margin: 5px;
 }
 
 .hole_map {
