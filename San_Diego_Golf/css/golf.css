@@ -339,6 +339,7 @@ select {
 	background: url('../img/putting_green.jpeg');
 	background-size: cover;
 	text-align: center;
+	margin: 0 0 10px 0;
 	padding-bottom: 1em;
 	padding-top: 1em;
 	font-size: 3em;
