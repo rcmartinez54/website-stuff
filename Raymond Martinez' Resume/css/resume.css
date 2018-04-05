@@ -150,15 +150,24 @@ h1 {
 }
 
 .three {
-	height: 100vh;
+	height: 83vh;
 	background-color: mintcream;
+}
+
+.form_heading {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+	width: 50%;
+	float: left;
 }
 
 form {
 	text-align: center;
 	margin: auto;
 	width: 80%;
-	padding: 140px;
+	padding: 20px 140px;
 }
 
 input, textarea {
@@ -181,7 +190,7 @@ input, textarea {
 }
 
 footer {
-	height: 30vh;
+	height: 18vh;
 	background: gray;
 	margin-top: 0;
 	color: white;
