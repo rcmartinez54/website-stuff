@@ -11,7 +11,8 @@ header  {
 	background-size: cover;
 	height: 100vh;
 	font-family: 'Lato', Sans-Serif;
-	
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 #header_content_container {
@@ -44,7 +45,7 @@ h1 {
 }
 
 .one {
-	background: url('../img/one_background.jpeg') no-repeat;
+	background: white;
 	background-size: cover;
 	height: 100vh;
 }
@@ -57,19 +58,36 @@ h1 {
 
 .work {
 	text-align: center;
-	margin: 0 270px;
+	margin: 0 170px;
 }
 
 .work1 {
 	float: left;
-	padding: 50px;
-	background: lightblue;
+	width: 35%;
+	padding: 15px;
+	background: white;
+	margin: 10px;
 }
+
+.work1 img {
+	width: 150px;
+}
+
 
 .work2 {
 	float: right;
+	width: 35%;
 	padding: 15px;
-	background: coral;
+	background: white;
+	margin: 10px;
+}
+
+.work2 img {
+	width: 185px;
+}
+
+.work2 p {
+	text-decoration: italic;
 }
 
 .work2 ul {
@@ -131,12 +149,29 @@ h1 {
 
 .three {
 	height: 100vh;
-	background-color: lightgray;
+	background-color: mintcream;
 }
 
 footer {
-	height: 50vh;
-	background: black;
+	height: 30vh;
+	background: gray;
 	margin-top: 0;
 	color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+footer h2 {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer_imgs {
+	text-align: center;
+}
+
+footer img {
+	width: 40px;
+	margin: 10px;
 }
