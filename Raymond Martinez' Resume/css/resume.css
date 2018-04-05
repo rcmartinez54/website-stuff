@@ -7,7 +7,7 @@
 
 header  {
 	color: lightcyan;
-	background: url('../img/web.jpeg');
+	background: url('../img/web.jpeg') fixed;
 	background-size: cover;
 	height: 100vh;
 	font-family: 'Lato', Sans-Serif;
@@ -161,7 +161,7 @@ h1 {
 
 .two {
 	height: 100vh;
-	background: url('../img/second_background.jpeg');
+	background: url('../img/second_background.jpeg') fixed;
 	background-size: cover;
 }
 
