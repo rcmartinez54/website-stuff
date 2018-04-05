@@ -20,6 +20,24 @@ header  {
 	padding: 200px 0;
 }
 
+@media (max-width: 1020px) {
+	#header_content_container {
+		margin: 0 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		height: 80vh;
+	}
+}
+
+@media (max-width: 413px) {
+	header {
+		height: 40vh;
+	}
+}
+
 body {
 	font-family: 'Catamaran', Sans-Serif;
 	font-size: 16px;
@@ -47,13 +65,13 @@ h1 {
 .one {
 	background: white;
 	background-size: cover;
-	height: 100vh;
+	height: 80vh;
 }
 
 .one_heading {
-	padding: 100px 270px;
+	padding: 70px 270px;
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .work {
@@ -73,7 +91,6 @@ h1 {
 .work1 img {
 	width: 150px;
 }
-
 
 .work2 {
 	float: right;
@@ -98,6 +115,50 @@ h1 {
 	padding-left: 0;
 }
 
+.hide {
+	display: none;
+}
+
+@media (max-width: 1020px) {
+
+	.work {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.work1, .work2 {
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.one_heading {
+		padding: 22px 130px;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	ul {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	.one {
+		height: 118vh;
+	}
+}
+
+@media (max-width: 414px) {
+	.one {
+		height: 40vh;
+	}
+}
+
 .two {
 	height: 100vh;
 	background: url('../img/second_background.jpeg');
@@ -105,10 +166,17 @@ h1 {
 }
 
 .two_p {
+	color: white;
 	text-align: center;
 	margin: 0 auto;
-	font-size: 30px;
-	padding: 20px 20px 0;
+	font-size: 3em;
+	padding: 60px 20px 0;
+}
+
+@media (max-width: 414px) {
+	.two {
+		height: 38vh;
+	}
 }
 
 #showContainer {
@@ -189,6 +257,29 @@ input, textarea {
     padding: 30px;
 }
 
+@media (max-width: 1020px) {
+	form {
+		padding: 20px 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	.three {
+		height: 110vh;
+	}
+
+	.form_heading {
+		float: none;
+
+	}
+}
+
+@media (max-width: 414px) {
+	.three {
+		height: 35vh;
+	}
+}
+
 footer {
 	height: 18vh;
 	background: gray;
@@ -211,4 +302,10 @@ footer h2 {
 footer img {
 	width: 40px;
 	margin: 10px;
+}
+
+@media (max-width: 414px) {
+	footer {
+		height: 10vh;
+	}
 }
