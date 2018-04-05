@@ -67,6 +67,7 @@ h1 {
 	padding: 15px;
 	background: white;
 	margin: 10px;
+	font-size: 1.3em;
 }
 
 .work1 img {
@@ -80,6 +81,7 @@ h1 {
 	padding: 15px;
 	background: white;
 	margin: 10px;
+	font-size: 1.3em;
 }
 
 .work2 img {
@@ -150,6 +152,32 @@ h1 {
 .three {
 	height: 100vh;
 	background-color: mintcream;
+}
+
+form {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	padding: 140px;
+}
+
+input, textarea {
+	border: none;
+    padding: 10px;
+    font-size: 25px;
+	width: 100%;
+	margin-top: 30px;
+	border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border: 1px solid;
+}
+
+.submit_button {
+	background: gray;
+	color: white;
+	width: 50%;
+    float: right;
+    padding: 30px;
 }
 
 footer {
