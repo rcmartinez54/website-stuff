@@ -1,17 +1,96 @@
-body {
-  font-family: "Arial";
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
-.main-image {
-  border: solid black 5px;
-  border-radius: 50%;
+header  {
+	color: lightcyan;
+	background: url('../img/web.jpeg');
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Lato', Sans-Serif;
+	
+}
+
+#header_content_container {
+	margin: 0 200px;
+	padding: 200px 0;
+}
+
+body {
+	font-family: 'Catamaran', Sans-Serif;
+	font-size: 16px;
+
+}
+
+.intro {
+	font-size: 65px;
+}
+
+.what_i_do {
+	float: right;
+	font-size: 44px;
+	margin-top: 30px;
 }
 
 h1 {
-  background-color: #e2e2e2;
-  padding: 5px;
+	float: right;
 }
 
 .section-title {
-  text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+.one {
+	background: url('../img/one_background.jpeg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.one_heading {
+	padding: 100px 270px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.work {
+	text-align: center;
+	margin: 0 270px;
+}
+
+.work1 {
+	float: left;
+	padding: 50px;
+	background: lightblue;
+}
+
+.work2 {
+	float: right;
+	padding: 15px;
+	background: coral;
+}
+
+.work2 ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+.two {
+	height: 100vh;
+	background: url('../img/second_background.jpeg');
+}
+
+.three {
+	height: 100vh;
+	background-color: lightgray;
+}
+
+footer {
+	height: 50vh;
+	background: black;
+	margin-top: 0;
+	color: white;
 }
