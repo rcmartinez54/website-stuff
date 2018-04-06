@@ -1,3 +1,18 @@
+
+$(document).ready(function() {
+
+})
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+function scrollTo() {
+	document.querySelector('.two').scrollIntoView({ behavior: 'smooth' });
+};
+
 $(document).ready(function() {
 	$('#previous').on('click', function() {
 		$('#im_' + currentImage).stop().fadeOut(1);
