@@ -241,6 +241,10 @@ h1 {
 	display: none;
 }
 
+.slide_img {
+	width: 100%;
+}
+
 .three {
 	height: 83vh;
 	background-color: white;
