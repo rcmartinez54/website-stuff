@@ -243,7 +243,7 @@ h1 {
 
 .three {
 	height: 83vh;
-	background-color: whitesmoke;
+	background-color: white;
 }
 
 .form_heading {
@@ -263,14 +263,18 @@ form {
 }
 
 input, textarea {
-	border: none;
+	background: #f2f2f2;
     padding: 10px;
     font-size: 25px;
 	width: 100%;
 	margin-top: 30px;
 	border-radius: 5px;
     border-bottom-right-radius: 0;
-    border: 1px solid;
+    border: none;
+}
+
+textarea {
+	border: none;
 }
 
 .submit_button {
