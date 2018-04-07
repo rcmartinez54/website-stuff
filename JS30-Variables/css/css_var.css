@@ -1,0 +1,70 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+img {
+	width: 300px;
+	float: left;
+}
+
+img:last-child {
+	float: none;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+}
+
+h2 {
+	font-family: 'Permanent Marker', cursive;
+
+}
+
+#images {
+	width: 56%;
+	margin: auto;
+}
+
+.controls {
+	position: sticky;
+	z-index: 2;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+
+}
+
+body:root {
+      --base: #ffc600;
+      --spacing: 10px;
+      --blur: 10px;
+    }
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+    .hl {
+      color: var(--base);
+    }
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-weight: 100;
+      font-size: 50px;
+    }
+    .controls {
+      margin-bottom: 50px;
+    }
+    input {
+      width:100px;
+    }
