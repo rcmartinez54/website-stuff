@@ -616,6 +616,8 @@ select {
 	background: url('../img/putting_green.jpg');
 	background-size: cover;
 	margin-bottom: 0;
+	width: 80%;
+	margin: auto;
 }
 
 #mt_signup {
