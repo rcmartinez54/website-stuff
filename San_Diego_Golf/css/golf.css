@@ -191,7 +191,6 @@ select {
 /*---------Header--------------*/
 
 #header_title_mt {
-	height: 550px;
 	margin: 0 auto;
 	background: url('../img/golf_cover.jpg') no-repeat;
 	background-size: cover;
@@ -199,28 +198,28 @@ select {
 }
 
 #header_title_coronado {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/coronado_gc.jpg') no-repeat;
 	background-size: cover;
 }
 
 #header_title_bonita {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/bonita_gc.jpg') no-repeat;
 	background-size: cover;
 }
 
 #header_title_mb {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/night_golf.jpg') no-repeat;
 	background-size: cover;
 }
 
 #header_title_gh {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/goat_hill.jpg') no-repeat;
 	background-size: cover;
@@ -236,17 +235,17 @@ select {
 }
 
 #header_title_cmr {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/cmr_gc.jpg') no-repeat;
 	background-size: cover;
 }
 
 #header_title_rw {
-	height: 550px;
+	height: 100vh;
 	margin: 0 auto;
 	background: url('../img/riverwalk_gc.jpg') no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 .banner {
