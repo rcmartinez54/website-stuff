@@ -27,12 +27,13 @@ nav ul li {
 	text-transform: uppercase;
 	float: left;
 	padding: 40px;
-	display: block;
+	
 }
 
-nav ul li a {
+nav ul a li {
 	text-decoration: none;
 	color: white;
+	display: block;
 }
 
 nav ul li:hover {
