@@ -1,4 +1,5 @@
 
+/*
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -35,8 +36,9 @@ $('a[href*="#"]')
       }
     }
   });
+*/
 
-/*
+
 $('a[href^="#"]').on('click', function(event) {
 
     var target = $(this.getAttribute('href'));
@@ -57,7 +59,7 @@ $('ul').find('a').click(function(){
 	$('body').animate({ scrollTop: $anchor.top }, 3000);
     return false;
 });
-*/
+
 
 $(document).ready(function() {
 	$('#previous').on('click', function() {
