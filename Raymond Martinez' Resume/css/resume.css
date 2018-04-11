@@ -44,6 +44,16 @@ nav ul li:hover {
 	padding: 200px 0;
 }
 
+#to_top {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#to_top a {
+	text-decoration: none;
+	color: black;
+}
+
 @media (max-width: 1020px) {
 	#header_content_container {
 		margin: 0 40px;
@@ -246,7 +256,7 @@ h1 {
 }
 
 .three {
-	height: 83vh;
+	height: 75vh;
 	background-color: white;
 }
 
