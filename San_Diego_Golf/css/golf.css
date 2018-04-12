@@ -50,7 +50,7 @@ nav {
 }
 
 
-ul {
+nav ul {
 	list-style-type: none;
 	margin-top: 0;
 	padding: 10px 0px;
@@ -68,11 +68,11 @@ ul {
 	-webkit-transition: all 2s;
 }
 
-ul li {
+nav ul li {
 	display: inline-block;
 }
 
-li a {
+nav ul li a {
 	text-transform: uppercase;
 	color: black;
 	padding: 14px 16px;
@@ -86,7 +86,7 @@ li a {
 	transistion: background-color .3s;
 }
 
-li a:hover {
+nav ul li a:hover {
 	background-color: green;
 	color: white;
 }
@@ -271,6 +271,44 @@ select {
 	color: black;
 	font-weight: bolder;
 	text-transform: capitalize;
+}
+
+#get_weather {
+	position: fixed;
+	right: -288px;
+	top: 72px;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 273px;
+	background: url('../img/Partly_Cloudy.png');
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#get_weather ul {
+	padding: 0;
+	margin: 0;
+}
+
+#get_weather ul li {
+	list-style: none;
+	line-height: 1.4em;
+	color: #000;
+}
+
+#icon img {
+	display: table;
+	margin: 0 auto;
+}
+
+#weather_tab {
+	position: fixed;
+	right: 40px;
+	top: 55px;
+	background: red;
+	padding: 10px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 @media (max-width: 960px) {
@@ -669,22 +707,6 @@ select {
 #date {
 	padding: 20px 20px;
     margin-left: 20px;
-}
-
-
-#get_weather {
-	text-align: center;
-	padding-top: 50px;
-}
-
-.get_weather {
-	text-transform: uppercase;
-	padding: 20px;
-}
-
-#result {
-	display: none;
-	padding-top: 0px;
 }
 
 #coronado_signup {
