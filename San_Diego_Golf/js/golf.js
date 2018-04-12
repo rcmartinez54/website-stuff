@@ -2,9 +2,9 @@
 $(document).ready(function() {
     $(window).scroll(function() {
        if ($(document).scrollTop() > 50) {
-        $("ul").addClass("scroll");
+        $("nav ul").addClass("scroll");
        } else {
-        $("ul").removeClass("scroll");
+        $("nav ul").removeClass("scroll");
        }
     });
 });
@@ -30,12 +30,36 @@ $(document).ready(function() {
     });
 });
 
+//Slides local weather from offscreen
+$(document).ready(function() {
+    $('#weather_tab').mouseover(function() {
+        $('#weather_tab').animate({
+          top: -100,
+          right: 40
+        }, 2000, function() {
 
-//Displays the date upon clicking of Date button
-function displayDate() {
-    document.getElementById('date').innerHTML = Date();
-}
+        });
+        $('#get_weather').animate({
+          top: 55,
+          right: 100
+        }, 2000, function() {
+          // animation complete
+        });
+    });
+});
 
+$(document).ready(function(){
+    $(window).scroll(function() {
+      if ($(document).scrollTop() >= 20) {
+        $('#get_weather').animate({
+          top: -200,
+          right: -200
+        }, 1000, function() {
+          //animation complete
+        });
+      }  
+    });
+});
 
 // Controls the dropdodwn menu
 function myFunction() {
