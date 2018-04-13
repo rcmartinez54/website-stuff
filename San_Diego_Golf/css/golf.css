@@ -283,6 +283,19 @@ select {
 	background: url('../img/Partly_Cloudy.png');
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	transition: right .3s;
+}
+
+#get_weather.active {
+	right: 100px;
+}
+
+#get_weather p {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	color: #fff;
 }
 
 #get_weather ul {
@@ -309,6 +322,7 @@ select {
 	padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	cursor: pointer;
 }
 
 @media (max-width: 960px) {
