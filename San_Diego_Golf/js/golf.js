@@ -7,10 +7,8 @@ $(document).ready(function() {
         $("nav ul").removeClass("scroll");
        }
     });
-});
 
 //Changes color of li elements to white
-$(document).ready(function() {
     $(window).scroll(function() {
        if ($(document).scrollTop() > 50) {
         $("li a").addClass("scroll2");
@@ -18,48 +16,41 @@ $(document).ready(function() {
         $("li a").removeClass("scroll2");
        }
     });
-});
 
 //Hides the h3 element when mousing over the scorecard
-$(document).ready(function() {
-    $('#scrcrd').mouseover(function() {
+    $('#scrcrd').mouseover(function () {
         $('#msovr').hide(1000);
     });
-    $('#scrcrd').mouseout(function() {
+    $('#scrcrd').mouseout(function () {
         $('#msovr').show(1000);
     });
-});
 
 //Slides local weather from offscreen
-$(document).ready(function() {
-    $('#weather_tab').mouseover(function() {
-        $('#weather_tab').animate({
-          top: -100,
-          right: 40
-        }, 2000, function() {
 
-        });
-        $('#get_weather').animate({
-          top: 55,
-          right: 100
-        }, 2000, function() {
-          // animation complete
+    $('#weather_tab').on('click', function () {
+        $('#weather_tab').fadeOut(500, function () {
+          $('#get_weather').addClass('active');
+          $('#get_weather').on('click', 'p', function () {
+            $('#get_weather').removeClass('active');
+            $('#weather_tab').fadeIn(500); 
+          });  
         });
     });
-});
 
-$(document).ready(function(){
-    $(window).scroll(function() {
-      if ($(document).scrollTop() >= 20) {
-        $('#get_weather').animate({
-          top: -200,
-          right: -200
-        }, 1000, function() {
-          //animation complete
-        });
-      }  
-    });
-});
+
+// //Transitions weather div offscreen upon scroll
+// $(document).ready(function(){
+//     $(window).scroll(function() {
+//       if ($(document).scrollTop() > 200 ) {
+//         $('#get_weather').animate({
+//           right: -400
+//         }, 1000, function() {
+//           //animation complete
+//         });
+//       }  
+//     });
+// });
+
 
 // Controls the dropdodwn menu
 function myFunction() {
@@ -81,7 +72,6 @@ window.onclick = function(e) {
 
 
 // Gets current weather from WUnderground
-$(document).ready(function() {
 
   $.ajax('http://api.wunderground.com/api/a52847f154aa6347/conditions/q/CA/San_Diego.json', {
     dataType: 'jsonp',
