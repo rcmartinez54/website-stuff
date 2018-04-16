@@ -25,7 +25,7 @@ $(document).ready(function() {
         $('#msovr').show(1000);
     });
 
-//Slides local weather from offscreen
+//Slides local weather from offscreen on click and returns upon second click
 
     $('#weather_tab').on('click', function () {
         $('#weather_tab').fadeOut(500, function () {
@@ -81,6 +81,7 @@ window.onclick = function(e) {
           currentTemp = data.current_observation.temperature_string,
           currentWeather = data.current_observation.weather,
           currentTime = data.current_observation.observation_time_rfc822;
+          console.log(currentWeather);
 
       $('#city strong').text(displayLocation);
       $('#icon').html('<img src=' + currentObs + '>');
