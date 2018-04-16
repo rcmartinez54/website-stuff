@@ -1,0 +1,123 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+	box-sizing: border-box;
+	background: #ffc600;
+	font-size: 1em;
+	font-weight: 200;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+*, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+body {
+	margin: 0;
+}
+
+header h1 {
+	text-align: center;
+}
+
+#image_container {
+	width: 98%;
+	margin: auto;
+}
+
+.images {
+	display: flex;
+	min-height: 70vh;
+	overflow: hidden;
+
+}
+
+.image {
+	background:#6B0F9C;
+      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+      color:white;
+      text-align: center;
+      align-items:center;
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s;
+      font-size: 20px;
+      background-size:cover;
+      background-position:center;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+}
+
+.image {
+	border: 2px solid black;
+}
+
+.image > * {
+      margin:0;
+      width: 100%;
+      transition:transform 0.5s;
+      flex: 1 0 auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.image > *:first-child { transform: translateY(-100%); }
+.image.open-active > *:first-child { transform: translateY(0); }
+.image > *:last-child { transform: translateY(100%); }
+.image.open-active > *:last-child { transform: translateY(0); }
+
+
+.image.open {
+      flex: 9;
+      font-size:40px;
+    }
+
+.image1 {
+	background-image: url('../img/Batman_process.png');
+}
+.image2 {
+	background-image: url('../img/Batman.png');
+}
+.image3 {
+	background-image: url('../img/Superman.png');
+}
+.image4 {
+	background-image: url('../img/Iron_Man.png');
+}
+.image5 {
+	background-image: url('../img/Hulk.png');
+}
+.image6 {
+	background-image: url('../img/Donatello.png');
+}
+.image7 {
+	background-image: url('../img/Freddy.png');
+}
+.image8 {
+	background-image: url('../img/Myers.png');
+}
+.image9 {
+	background-image: url('../img/Chucky.png');
+}
+.image10 {
+	background-image: url('../img/Jason.png');
+}
+.image11 {
+	background-image: url('../img/Leatherface.png');
+}
+.image12 {
+	background-image: url('../img/Pennywise.png');
+}
+
+footer h2 {
+	text-align: center;
+}
