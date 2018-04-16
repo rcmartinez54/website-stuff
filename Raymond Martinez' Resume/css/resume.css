@@ -196,7 +196,7 @@ h1 {
 
 .two {
 	height: 100vh;
-	background: url('../img/two_background6.jpeg') fixed;
+	background: linear-gradient(to bottom, gray, transparent), url('../img/two_background6.jpeg') fixed;
 	background-size: cover;
 }
 
