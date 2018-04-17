@@ -7,7 +7,8 @@
 
 html {
 	box-sizing: border-box;
-	background: #ffc600;
+	background: linear-gradient(white, transparent, white), url('../img/Glass.jpg') no-repeat;
+	background-size: cover;
 	font-size: 1em;
 	font-weight: 200;
 	font-family: 'Black Han Sans', sans-serif;
@@ -22,7 +23,19 @@ body {
 }
 
 header h1 {
+	text-transform: uppercase;
+	color: black;
+	text-shadow: 2px 2px 5px lightskyblue;
+	width: 98%;
+	margin: 12px auto;
 	text-align: center;
+	padding: 20px;
+	letter-spacing: 10px;
+}
+
+#click h5 {
+	margin: auto;
+	width: 98%;
 }
 
 #image_container {
@@ -32,32 +45,36 @@ header h1 {
 
 .images {
 	display: flex;
-	min-height: 70vh;
+	min-height: 65vh;
 	overflow: hidden;
+	border-radius: 5px;
 
 }
 
 .image {
 	background:#6B0F9C;
-      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
-      color:white;
-      text-align: center;
-      align-items:center;
-      transition:
-        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        background 0.2s;
-      font-size: 20px;
-      background-size:cover;
-      background-position:center;
-      flex: 1;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
+	box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+	color:white;
+	text-align: center;
+	align-items:center;
+	transition:
+		font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+		flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+		background 0.2s;
+	font-size: 20px;
+	background-size:cover;
+	background-position:center;
+	flex: 1;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
 }
 
 .image {
 	border: 2px solid black;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	cursor: pointer;
 }
 
 .image > * {
@@ -70,10 +87,9 @@ header h1 {
       align-items: center;
     }
 
-.image > *:first-child { transform: translateY(-100%); }
-.image.open-active > *:first-child { transform: translateY(0); }
-.image > *:last-child { transform: translateY(100%); }
-.image.open-active > *:last-child { transform: translateY(0); }
+.image > * { transform: translateY(300%); }
+.image.open-active > *: { transform: translateY(1); }
+
 
 
 .image.open {
@@ -118,6 +134,17 @@ header h1 {
 	background-image: url('../img/Pennywise.png');
 }
 
-footer h2 {
+footer {
 	text-align: center;
+	width: 98%;
+	margin: 10px auto;
+	padding: 12px;
+	letter-spacing: 5px;
+	color: black;
+	text-shadow: 2px 2px 5px lightskyblue;
+	background-color: linear-gradient(to top, white, transparent);
+}
+
+footer img {
+	width: 5%;
 }
