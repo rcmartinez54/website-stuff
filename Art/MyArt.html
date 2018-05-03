@@ -2,61 +2,71 @@
 <html>
 <head>
 	<title>My Mirror & Window Art</title>
-	<link rel="stylesheet" type="text/css" href="css/art.css">
-	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/art2.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 </head>
 <body>
-	<header>
+	<header id="main_words">
 		<h1>Drawing On Glass</h1>
 	</header>
 	<div id="click">
-		<h5>Click image to expand</h5>
+		<h5>Click to show images</h5>
 	</div>
 	<div id="image_container" class="clearfix">
-		<div class="images clearfix">
-			<div class="image image1">
-				<p>Process</p>
+		<div id="images" class="clearfix">
+			<div class="image">
+				<img src="img/Donatello.png" alt="Donatello">
 			</div>
-			<div class="image image2">
-				<p>Batman</p>
+			<div class="image">
+				<img src="img/Superman.png" alt="Superman">
 			</div>
-			<div class="image image3">
-				<p>Superman</p>
+			<div class="image">
+				<img src="img/Hulk.png" alt="Hulk">
 			</div>
-			<div class="image image4">
-				<p>Ironman</p>
+			<div class="image">
+				<img src="img/Iron_Man.png" alt="IronMan">
 			</div>
-			<div class="image image5">
-				<p>Hulk</p>
+			<div class="image">
+				<img src="img/Batman_process.png" alt="Batman Process">
 			</div>
-			<div class="image image6">
-				<p>Donatello</p>
+			<div class="image">
+				<img src="img/Batman.png" alt="Batman">
 			</div>
-			<div class="image image7">
-				<p>Freddy</p>
+			<div class="image">
+				<img src="img/Freddy.png" alt="Freddy">
 			</div>
-			<div class="image image8">
-				<p>Michael</p>
+			<div class="image">
+				<img src="img/Myers.png" alt="Michael Myers">
 			</div>
-			<div class="image image9">
-				<p>Chucky</p>
+			<div class="image">
+				<img src="img/Chucky.png" alt="Chucky">
 			</div>
-			<div class="image image10">
-				<p>Jason</p>
+			<div class="image">
+				<img src="img/Jason.png" alt="Jason">
 			</div>
-			<div class="image image11">
-				<p>Leatherface</p>
+			<div class="image">
+				<img src="img/Leatherface.png" alt="Leatherface">
 			</div>
-			<div class="image image12">
-				<p>Pennywise</p>
+			<div class="image">
+				<img src="img/Pennywise.png" alt="Pennywise">
 			</div>
 		</div>
 	</div>
 	<footer>
 		<h2>All art was done by me. <br>  You can check them out on my instagram page</h2>
-		<a href="https://www.instagram.com/rcmartinez54/" target="_blank"><img src="img/ig_logo.png"></a>
+		<a href="https://www.instagram.com/rcmartinez54/" target="_blank"><img class="ig" src="img/ig_logo.png"></a>
 	</footer>
+	<div id="overlay"></div>
+	<div id="modal">
+		<header>
+			<h3></h3>
+			<p>X</p>
+		</header>
+		<div id="add_img"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/art.js"></script>
 </body>
 </html>

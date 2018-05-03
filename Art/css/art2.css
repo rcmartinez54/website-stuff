@@ -1,0 +1,273 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: black;
+	background-size: cover;
+	font-size: 1em;
+	font-weight: 200;
+	font-family: 'Abril Fatface', cursive;
+	max-width: 1200px;
+	margin: auto;
+}
+
+body {
+	background: white;
+}
+
+.col_1 {
+	width: 8.33%;
+}
+.col_2 {
+	width: 16.33%;
+}
+.col_3 {
+	width: 25%;
+}
+.col_4 {
+	width: 33.33%;
+}
+.col_5 {
+	width: 41.66%;
+}
+.col_6 {
+	width: 50%;
+}
+.col_7 {
+	width: 58.33%;
+}
+.col_8 {
+	width: 66.66%;
+}
+.col_9 {
+	width: 75%;
+}
+.col_10 {
+	width: 83.33%;
+}
+.col_11 {
+	width: 91.66%;
+}
+.col_12 {
+	width: 100%;
+}
+
+header h1 {
+	text-transform: uppercase;
+	color: black;
+	text-shadow: 2px 2px 5px lightskyblue;
+	width: 98%;
+	margin: 12px auto;
+	text-align: center;
+	padding: 20px;
+	letter-spacing: 10px;
+	font-size: 5em;
+}
+
+#click {
+	margin: auto;
+	text-align: center;
+	width: 98%;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+#image_container {
+	width: 100%;
+	padding: 15px;
+}
+
+#images {
+	margin: 0 auto;
+}
+
+.image {
+	width: 31.6%;
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+	height: 390px;
+	border: 1px solid black;
+}
+
+.caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+// .image1 {
+// 	background: url('../img/Batman_process.png') no-repeat;
+// 	image-size: cover;
+// }
+// .image2 {
+// 	background: url('../img/Batman.png') no-repeat;
+// 	image-size: cover;
+
+// }
+// .image3 {
+// 	background: url('../img/Superman.png') no-repeat;
+// 	image-size: cover;
+
+// }
+// .image4 {
+// 	background-image: url('../img/Iron_Man.png');
+// 	image-size: cover;
+// }
+// .image5 {
+// 	background-image: url('../img/Hulk.png');
+// 	image-size: cover;
+// }
+// .image6 {
+// 	background-image: url('../img/Donatello.png');
+// 	image-size: cover;
+// }
+// .image7 {
+// 	background-image: url('../img/Freddy.png');
+// 	image-size: cover;
+// }
+// .image8 {
+// 	background-image: url('../img/Myers.png');
+// 	image-size: cover;
+// }
+// .image9 {
+// 	background-image: url('../img/Chucky.png');
+// 	image-size: cover;
+// }
+// .image10 {
+// 	background-image: url('../img/Jason.png');
+// 	image-size: cover;
+// }
+// .image11 {
+// 	background-image: url('../img/Leatherface.png');
+// 	image-size: cover;
+// }
+// .image12 {
+// 	background-image: url('../img/Pennywise.png');
+// 	image-size: cover;
+// }
+
+footer {
+	text-align: center;
+	width: 98%;
+	margin: 10px auto;
+	padding: 12px;
+	letter-spacing: 5px;
+	color: black;
+	text-shadow: 2px 2px 5px lightskyblue;
+	background-color: linear-gradient(to top, white, transparent);
+}
+
+.ig {
+	width: 5%;
+	height: 5%;
+	border: none;
+}
+
+
+#overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	display: block;
+	display: none;
+}
+
+#modal {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+}
+
+#modal header {
+	position: relative;
+	background: lightblue;
+	width: 100%;
+	padding: 10px 0;
+}
+
+#modal header p {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	margin: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+#modal header h3 {
+	color: #fff;
+	margin: 0 0 0 10px;
+}
+
+#modal #add_img img {
+	width: 100%;
+	display: block;
+}
+
+@media (max-width: 904px) {
+	.image {
+		width: 47%;
+	}
+	header {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 715px) {
+	.image {
+		width: 100%;
+	}
+	header {
+		font-size: 8px;
+	}
+	footer {
+		font-size: 10px;
+	}
+	.ig {
+		width: 8%;
+		height: 8%;
+	}
+}
