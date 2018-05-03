@@ -1,17 +1,47 @@
 
-const images = document.querySelectorAll('.image');
 
-//this selects the class and adds the class of open which increases the flex
-function toggleOpen() {
-	this.classList.toggle('open');
+let $overlay = $('#overlay'),
+	$modal = $('#modal'),
+	$addImg = $('#add_img'),
+	$modalWords = $('#modal h3');
+
+function openModal() {
+	$overlay.fadeIn(500);
+	$modal.fadeIn(500);
 }
 
-function toggleActive(e) {
-	if (e.propertyName.includes('flex')) {
-		this.classList.toggle('open-active');
-	}
+function closeModal() {
+	$overlay.fadeOut(500);
+	$modal.fadeOut(500);
+	$addImg.find('img').remove();
 }
 
-//listens for click event and acts accordingly
-images.forEach(image => image.addEventListener('click', toggleOpen));
-images.forEach(image => image.addEventListener('transitioned', toggleActive));
+
+$(document).ready(function(){
+
+	$('#images').hide();
+
+	$('#click').click(function() {
+    	$('#images').fadeIn(3000);
+    	$('#click').html("<h5>Hope you like them!</h5>");
+    });
+
+    $("#images").on("click", ".image", function(){
+    	let $selectedImage = $(this).find('img').attr('src'),
+			$selectedHeading = $(this).find('img').attr('alt');
+
+		$modalWords.text($selectedHeading);
+		$addImg.append('<img src="' + $selectedImage + '">');
+
+        openModal();
+
+    });
+
+    $('p').click(function(){
+    	closeModal();
+    });
+
+    
+    
+});
+

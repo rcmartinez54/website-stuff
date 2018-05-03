@@ -115,7 +115,7 @@ select {
 	}
 
 	.select_container {
-		background-color: limegreen;
+		background-color: white;
 		border-bottom: 1px solid forestgreen;
    		font-size: 1.2em;
    		text-shadow: 2px 2px 10px white;
@@ -129,6 +129,15 @@ select {
 	select {
 		display: inline-block;
 		float: right;
+	}
+
+	.select_heading {
+		margin: auto;
+		padding: 20px;
+	}
+
+	#weather_tab {
+		top: 205px;
 	}
 }
 
@@ -781,13 +790,13 @@ select {
 @media (max-width: 960px) {
 
 	#join {
-		width: 100%;
+		width: 80%;
 		margin: auto;
 		padding-top: 20px;
 	}
 
 	#join_buttons {
-		width: 100%;
+		width: 70%;
 	}
 
 	#ads_btn{
@@ -796,22 +805,14 @@ select {
 		margin-bottom: 10px;
 	}
 
-	.social_media {
-		display: none;
-	}
-	#date {
-		display: none;
-	}
 	#mt_signup {
-		float: none;
 		text-align: center;
 	}
 	#mt_signup img {
 		float: none;
-		margin-left: 156px;
 	}
 	#mt_signup button {
-		margin: 20px 0;
+		margin: 10px 0;
 	}
 }
 

@@ -97,6 +97,8 @@ header h1 {
       font-size:40px;
     }
 
+@media()
+
 .image1 {
 	background-image: url('../img/Batman_process.png');
 }
