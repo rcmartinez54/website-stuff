@@ -19,11 +19,17 @@ function closeModal() {
 
 $(document).ready(function(){
 
+	$('#main_words').css({'background': 'linear-gradient(to left, white, lightblue, white, lightblue, white'});
+
 	$('#images').hide();
+
+	$('#click').hide();
+	$('#click').fadeIn(5000);
 
 	$('#click').click(function() {
     	$('#images').fadeIn(3000);
     	$('#click').html("<h5>Hope you like them!</h5>");
+    	$('#click').slideUp(5000);
     });
 
     $("#images").on("click", ".image", function(){
@@ -59,7 +65,7 @@ $(document).ready(function(){
 			$('#modal header h3').css({'color': 'black'}),
 			$('#modal header p').css({'color': 'black'});
 		} else if ($selectedHeading == 'MICHAEL MYERS') {
-			$('#modal header').css({'background': 'black'}),
+			$('#modal header').css({'background': 'gray'}),
 			$('#modal header h3').css({'color': 'blue'}),
 			$('#modal header p').css({'color': 'blue'});
 		} else if ($selectedHeading == 'CHUCKY') {
