@@ -130,57 +130,6 @@ img {
 	cursor: pointer;
 }
 
-// .image1 {
-// 	background: url('../img/Batman_process.png') no-repeat;
-// 	image-size: cover;
-// }
-// .image2 {
-// 	background: url('../img/Batman.png') no-repeat;
-// 	image-size: cover;
-
-// }
-// .image3 {
-// 	background: url('../img/Superman.png') no-repeat;
-// 	image-size: cover;
-
-// }
-// .image4 {
-// 	background-image: url('../img/Iron_Man.png');
-// 	image-size: cover;
-// }
-// .image5 {
-// 	background-image: url('../img/Hulk.png');
-// 	image-size: cover;
-// }
-// .image6 {
-// 	background-image: url('../img/Donatello.png');
-// 	image-size: cover;
-// }
-// .image7 {
-// 	background-image: url('../img/Freddy.png');
-// 	image-size: cover;
-// }
-// .image8 {
-// 	background-image: url('../img/Myers.png');
-// 	image-size: cover;
-// }
-// .image9 {
-// 	background-image: url('../img/Chucky.png');
-// 	image-size: cover;
-// }
-// .image10 {
-// 	background-image: url('../img/Jason.png');
-// 	image-size: cover;
-// }
-// .image11 {
-// 	background-image: url('../img/Leatherface.png');
-// 	image-size: cover;
-// }
-// .image12 {
-// 	background-image: url('../img/Pennywise.png');
-// 	image-size: cover;
-// }
-
 footer {
 	text-align: center;
 	width: 98%;
@@ -211,9 +160,9 @@ footer {
 }
 
 #modal {
-	position: absolute;
-	width: 400px;
-	height: 400px;
+	position: fixed;
+	width: 500px;
+	height: 500px;
 	background: #fff;
 	top: 50%;
 	left: 50%;
@@ -233,8 +182,12 @@ footer {
 	top: 5px;
 	right: 5px;
 	margin: 0;
-	color: #fff;
+	color: #000;
 	cursor: pointer;
+}
+
+#modal header p:hover {
+	color: red;
 }
 
 #modal header h3 {
@@ -244,6 +197,7 @@ footer {
 
 #modal #add_img img {
 	width: 100%;
+	height: 100%;
 	display: block;
 }
 
