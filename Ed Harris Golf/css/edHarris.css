@@ -1,0 +1,107 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+	background: url('../img/pageBackground.jpeg');
+	background-size: cover;
+	font-family: 'Playfair Display', serif;
+
+}
+
+body {
+	text-align: center;
+}
+
+#content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100vh;
+	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+header {
+	padding: 20px 0;
+}
+
+.header_img {
+	float: left;
+	width: 27%;
+}
+
+.header_text {
+	float: left;
+	width: 48%;
+}
+
+
+nav ul {
+	margin-left: -20px
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	padding: 10px 45px;
+	margin-left: 0px;
+	background: blue;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+.left_content {
+	float: left;
+	width: 65%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+}
+
+.right_content {
+	float: left;
+	width: 28%;
+}
+
+.left_content_profile {
+	font-size: 16px;
+	width: 70%;
+	text-align: left;
+	margin-left: 20px;
+}
+
+footer {
+	background: white;
+	max-width: 1200px;
+	margin: auto;
+	border-top: 1px solid black;
+}
+
+footer .socMed {
+	float: right;
+	width: 5%;
+	height: 5%;
+	padding: 22px;
+	margin-top: 10px;
+}
+
+footer img {
+	float: left;
+	padding: 10px;
+
+}
