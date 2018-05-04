@@ -40,50 +40,39 @@ $(document).ready(function(){
 		$addImg.append('<img src="' + $selectedImage + '">');
 		if ($selectedHeading == 'DONATELLO') {
 			$('#modal header').css({'background': 'green'}),
-			$('#modal header h3').css({'color': 'purple'}),
-			$('#modal header p').css({'color': 'purple'});
+			$('#modal header h3, #modal header p').css({'color': 'purple'});
 		} else if ($selectedHeading == 'SUPERMAN') {
 			$('#modal header').css({'background': 'blue'}),
-			$('#modal header h3').css({'color': 'yellow'}),
-			$('#modal header p').css({'color': 'yellow'});
+			$('#modal header h3, #modal header p').css({'color': 'yellow'});
 		} else if ($selectedHeading == 'HULK') {
 			$('#modal header').css({'background': 'limegreen'}),
-			$('#modal header h3').css({'color': 'purple'}),
-			$('#modal header p').css({'color': 'purple'});;
+			$('#modal header h3, #modal header p').css({'color': 'purple'});
 		} else if ($selectedHeading == 'IRONMAN') {
 			$('#modal header').css({'background': 'red'}),
-			$('#modal header h3').css({'color': 'yellow'}),
-			$('#modal header p').css({'color': 'yellow'});
+			$('#modal header h3, #modal header p').css({'color': 'yellow'});
 		} else if ($selectedHeading == 'BATMAN' || 'BATMAN PROCESS') {
 			$('#modal header').css({'background': 'black'}),
-			$('#modal header h3').css({'color': 'yellow'}),
-			$('#modal header p').css({'color': 'yellow'});
+			$('#modal header h3, #modal header p').css({'color': 'yellow'});
 		}
 
 		if ($selectedHeading == 'FREDDY') {
 			$('#modal header').css({'background': 'red'}),
-			$('#modal header h3').css({'color': 'black'}),
-			$('#modal header p').css({'color': 'black'});
+			$('#modal header h3, #modal header p').css({'color': 'black'});
 		} else if ($selectedHeading == 'MICHAEL MYERS') {
 			$('#modal header').css({'background': 'gray'}),
-			$('#modal header h3').css({'color': 'blue'}),
-			$('#modal header p').css({'color': 'blue'});
+			$('#modal header h3, #modal header p').css({'color': 'blue'});
 		} else if ($selectedHeading == 'CHUCKY') {
 			$('#modal header').css({'background': 'blue'}),
-			$('#modal header h3').css({'color': 'orange'}),
-			$('#modal header p').css({'color': 'orange'});
+			$('#modal header h3, #modal header p').css({'color': 'orange'});
 		} else if ($selectedHeading == 'JASON') {
 			$('#modal header').css({'background': 'green'}),
-			$('#modal header h3').css({'color': 'black'}),
-			$('#modal header p').css({'color': 'black'});
+			$('#modal header h3, #modal header p').css({'color': 'black'});
 		} else if ($selectedHeading == 'LEATHERFACE') {
 			$('#modal header').css({'background': 'yellow'}),
-			$('#modal header h3').css({'color': 'green'}),
-			$('#modal header p').css({'color': 'green'});
+			$('#modal header h3, #modal header p').css({'color': 'green'});
 		} else if ($selectedHeading == 'PENNYWISE') {
 			$('#modal header').css({'background': 'white'}),
-			$('#modal header h3').css({'color': 'red'}),
-			$('#modal header p').css({'color': 'red'});
+			$('#modal header h3, #modal header p').css({'color': 'red'});
 		};
 
         openModal();
