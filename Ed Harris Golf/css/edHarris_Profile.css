@@ -18,8 +18,8 @@ body {
 #content_wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	height: 100vh;
-	background: linear-gradient(to top, white 40%, transparent), url('../img/profile_background.jpeg');
+	height: 1300px;
+	background: white;
 	background-size: cover;
 	border-radius: 5px;
 }
@@ -48,7 +48,7 @@ nav ul li {
 	float: left;
 	padding: 10px 45px;
 	margin-left: 0px;
-	background: blue;
+	background: #2196F3;
 	color: white;
 	border-radius: 5px;
 	margin-right: 5px;
@@ -56,51 +56,52 @@ nav ul li {
 	border-top-right-radius: 20px;
 }
 
-nav ul li:last-child {
-	margin-right: 0;
-}
-
-nav ul li:first-child {
-	margin-left: 0;
-}
-
-.left_content {
-	float: left;
-	width: 65%;
-	margin: 0 10px;
-	padding: 0 24px 0;
-	font-size: 22px;
-}
-
-.right_content {
-	float: left;
-	width: 28%;
-}
-
 .top_content_profile {
 	font-size: 16px;
 	width: 70%;
 	text-align: left;
-	margin-left: 20px;
+	font-size: 20px;
+	margin: auto;
+}
+
+.bottom_content_profile  {
+	margin-top: 38px;
+	padding-top: 28px;
+	width: 70%;
+	margin: auto;
+}
+
+.star_images {
+	float: left;
+	width: 33%;
+}
+
+.star_images img {
+	height: 227px;
+	border-radius: 5px;
 }
 
 footer {
-	background: white;
+	background: lightgray;
 	max-width: 1200px;
 	margin: auto;
 	border-top: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 footer .socMed {
 	float: right;
-	width: 5%;
-	height: 5%;
-	padding: 22px;
-	margin-top: 10px;
+	width: 3%;
+	height: 3%;
+	padding: 8px;
+	margin-top: 2px;
 }
 
 footer img {
 	float: left;
+	width: 8%;
+	height: 8%;
 	padding: 10px;
 
 }
