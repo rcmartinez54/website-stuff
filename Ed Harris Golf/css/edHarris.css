@@ -39,9 +39,8 @@ header {
 	width: 48%;
 }
 
-
 nav ul {
-	margin-left: -20px
+	margin-left: -18px;
 }
 
 nav ul li {
@@ -49,7 +48,7 @@ nav ul li {
 	float: left;
 	padding: 10px 45px;
 	margin-left: 0px;
-	background: blue;
+	background: #2196F3;
 	color: white;
 	border-radius: 5px;
 	margin-right: 5px;
@@ -57,12 +56,8 @@ nav ul li {
 	border-top-right-radius: 20px;
 }
 
-nav ul li:last-child {
-	margin-right: 0;
-}
-
-nav ul li:first-child {
-	margin-left: 0;
+nav ul li:hover {
+	background: blue;
 }
 
 .left_content {
@@ -71,37 +66,411 @@ nav ul li:first-child {
 	margin: 0 10px;
 	padding: 0 24px 0;
 	font-size: 22px;
+	text-align: left;
 }
 
 .right_content {
+	margin-top: 20px;
 	float: left;
 	width: 28%;
 }
 
-.left_content_profile {
-	font-size: 16px;
-	width: 70%;
-	text-align: left;
-	margin-left: 20px;
-}
-
 footer {
-	background: white;
+	background: lightgray;
 	max-width: 1200px;
 	margin: auto;
 	border-top: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
 footer .socMed {
 	float: right;
-	width: 5%;
-	height: 5%;
-	padding: 22px;
-	margin-top: 10px;
+	width: 3%;
+	height: 3%;
+	padding: 8px;
+	margin-top: 2px;
 }
 
 footer img {
 	float: left;
+	width: 8%;
+	height: 8%;
 	padding: 10px;
 
+}
+
+/* -- Contact Styles -- */
+
+#contact_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.contact_info_wrap {
+	width: 60%;
+	margin: auto;
+}
+
+.contact_info_wrap .left_content {
+	width: 48%;
+}
+
+.contact_info_wrap .right_content {
+	width: 40%;
+}
+
+/* -- Hours Styles -- */
+
+.hours_wrap {
+	width: 62%;
+	margin: auto;
+}
+
+.hours_left_content {
+	float: left;
+	width: 45%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+}
+
+.hours_right_content {
+	margin-top: 20px;
+	float: left;
+	width: 45%;
+}
+
+/* -- Schools Styles -- */
+
+#schools_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1200px;
+	background: linear-gradient(to bottom, white 85%, transparent), url('../img/schools_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.schools_wrap .left_content {
+
+}
+
+.schools_wrap .left_content p {
+	text-align: left;
+	font-size: 18px;
+}
+
+.schools_wrap .right_content img {
+	margin-top: 20px;
+}
+
+.schools_wrap .right_content .bottom_image {
+	margin-top: 100px;
+}
+
+/* -- Lessons Styles -- */
+
+#lessons_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 75%, transparent), url('../img/school_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.lessons_wrap {
+	width: 85%;
+	margin: auto;
+}
+
+.lessons_wrap .left_content {
+	text-align: left;
+}
+
+.lessons_wrap .right_content img {
+	border-radius: 5px;
+}
+
+.lessons_wrap .left_content ul {
+	text-align: center;
+	margin: auto;
+}
+
+.lessons_wrap .left_content ul li {
+	list-style: none;
+	text-align: left;
+}
+
+/* -- Reservations Styles -- */
+
+#reservations_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1000px;
+	background: linear-gradient(to bottom, white 45%, transparent), url('../img/reservations_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.reservations_wrap {
+	margin: auto;
+	width: 90%;
+}
+
+.reservations_wrap .left_content {
+	float: left;
+	width: 31%;
+}
+
+.reservations_wrap .left_content p {
+	font-size: 12px;
+	text-align: left;
+}
+
+.boxes {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxes input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.boxes:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.boxes input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.boxes input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.boxes .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.reservations_wrap .center_content {
+	float: left;
+	width: 31%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.reservations_wrap .center_content form input {
+	padding: 10px;
+	margin: 20px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.reservations_wrap .center_content form textarea {
+	padding: 20px;
+	margin: 10px;
+	width: 75%;
+	border-radius: 5px;
+}
+
+.reservations_wrap .center_content form button {
+	padding: 10px;
+	width: 50%;
+	margin: 10px;
+	border-radius: 5px;
+	background: #2196F3;
+	color: white;
+	border: 1px solid black;
+}
+
+.reservations_wrap .right_content {
+	float: left;
+	width: 31%;
+	margin-top: 70px;
+}
+
+.reservations_wrap .right_content img {
+	width: 50%;
+	margin-left: 70px;
+}
+
+/* -- Private Lessons Styles --*/
+
+#privateLessons_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 50%, transparent), url('../img/privateLesson.jpeg');
+	background-size: cover;
+	border-radius: 5px;	
+}
+
+.privateLessons_wrap {
+	margin: auto;
+	width: 80%;
+}
+
+.privateLessons_wrap .top_content {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.privateLessons_wrap .bottom_left_content {
+	float: left;
+	width: 60%;
+	font-size: 20px;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th:first-child {
+	border-top-left-radius: 5px;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th:last-child {
+	border-top-right-radius: 5px;
+}
+
+.privateLessons_wrap .bottom_left_content table .left_align {
+	text-align: left;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th {
+	padding: 10px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background: #2196F3;
+	color: white;
+}
+
+.privateLessons_wrap .bottom_left_content table tr td {
+	padding: 10px;
+}
+
+.privateLessons_wrap table tr:nth-child(odd) {
+	background: #bfbfbf;
+	color: black;
+}
+
+.privateLessons_wrap table tr:nth-child(even) {
+	background: #ddd;
+	color: black;
+}
+
+.privateLessons_wrap .bottom_right_content {
+	float: right;
+	width: 37%;
+}
+
+.privateLessons_wrap .bottom_right_content img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+@media (max-width: 1025px) {
+	nav ul {
+		margin-left: 40px;
+	}
+	nav ul li {
+		padding: 10px 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	nav ul {
+		margin: auto;
+		margin-left: 30px;
+	}
+	nav ul li {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+	.privateLessons_wrap .top_content {
+		font-size: 16px;
+	}
+	.privateLessons_wrap .bottom_right_content {
+		float: none;
+		margin: auto;
+	}
+	.privateLessons_wrap .bottom_left_content {
+		float: none;
+		font-size: 12px;
+		margin: auto;
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_left_content table {
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_right_content {
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_right_content img {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	header {
+		font-size: 12px;
+	}
+	header .header_img img {
+		width: 70%;
+	}
+	header .header_pga img {
+		width: 20%;
+	}
+	nav {
+		display: none;
+	}
+	.privateLessons_wrap {
+		width: 95%;
+	}
+	.privateLessons_wrap .top_content {
+		margin-bottom: 5px;
+	}
+	.content_heading {
+		font-size: 12px;
+	}
 }
