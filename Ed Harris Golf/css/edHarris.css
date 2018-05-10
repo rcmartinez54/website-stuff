@@ -9,24 +9,20 @@ html {
 	background: url('../img/pageBackground.jpeg');
 	background-size: cover;
 	font-family: 'Playfair Display', serif;
-
 }
 
 body {
 	text-align: center;
 }
 
-#content_wrap {
-	max-width: 1200px;
-	margin: 0 auto;
-	height: 100vh;
-	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
-	background-size: cover;
-	border-radius: 5px;
+header {
+	padding: 15px 0;
+	font-size: 1.2em;
+
 }
 
-header {
-	padding: 20px 0;
+header h1 {
+	margin-bottom: 0;
 }
 
 .header_img {
@@ -37,6 +33,13 @@ header {
 .header_text {
 	float: left;
 	width: 48%;
+}
+
+nav {
+	background: #2196F3;
+	height: 42px;
+	margin-bottom: 50px;
+	max-width: 100%;
 }
 
 nav ul {
@@ -58,21 +61,72 @@ nav ul li {
 
 nav ul li:hover {
 	background: blue;
+	transition: all 3s;
 }
 
-.left_content {
+#media {
+	background: #2196F3;
+	color: #fff;
+	position: relative;
+	display: none;
+}
+
+.media_menu {
+	background: #fff;
+}
+
+.media_menu img {
+	width: 10%;
 	float: left;
-	width: 65%;
-	margin: 0 10px;
-	padding: 0 24px 0;
+	padding: 20px;
+}
+
+.media_menu img:hover {
+	background: blue;
+}
+
+.media_menu p {
+	float: left;
 	font-size: 22px;
-	text-align: left;
+	margin-left: 10px;
 }
 
-.right_content {
-	margin-top: 20px;
-	float: left;
-	width: 28%;
+.media_menu .close {
+	display: none;
+}
+
+.media_nav {
+	background: #ff;
+	position: absolute;
+	display: none;
+	top: 80px;
+	left: 0px;
+	z-index: 2;
+}
+
+.media_nav ul {
+	margin: auto;
+	padding: 0;
+}
+
+.media_nav ul li {
+	float: none;
+	width: 100%;
+	border-radius: 0px;
+	text-decoration: none;
+	list-style: none;
+	background: #2196F3;
+	padding: 15px;
+	color: #fff;
+}
+
+.media_nav ul li:hover {
+	background: blue;
+	transition: all 3s;
+}
+
+.media_nav ul a {
+	text-decoration: none;
 }
 
 footer {
@@ -100,6 +154,42 @@ footer img {
 
 }
 
+/* -- Home Styles -- */
+
+#home_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.home_wrap {
+	width: 80%;
+	margin: auto;
+}
+
+.home_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
+}
+
+.home_wrap .right_content {
+	margin-top: 32px;
+	float: left;
+	width: 28%;
+}
+
+.home_wrap .right_content img {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
 /* -- Contact Styles -- */
 
 #contact_content_wrap {
@@ -117,10 +207,17 @@ footer img {
 }
 
 .contact_info_wrap .left_content {
+	float: left;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
 	width: 48%;
 }
 
 .contact_info_wrap .right_content {
+	margin-top: 32px;
+	float: left;
 	width: 40%;
 }
 
@@ -150,14 +247,24 @@ footer img {
 #schools_content_wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	height: 1200px;
+	height: 1290px;
 	background: linear-gradient(to bottom, white 85%, transparent), url('../img/schools_background.jpeg');
 	background-size: cover;
 	border-radius: 5px;
 }
 
-.schools_wrap .left_content {
+.schools_wrap {
+	width: 93%;
+	margin: auto;
+}
 
+.schools_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
 }
 
 .schools_wrap .left_content p {
@@ -166,7 +273,8 @@ footer img {
 }
 
 .schools_wrap .right_content img {
-	margin-top: 20px;
+	margin-top: 40px;
+	border-radius: 5px;
 }
 
 .schools_wrap .right_content .bottom_image {
@@ -178,8 +286,8 @@ footer img {
 #lessons_content_wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	height: 900px;
-	background: linear-gradient(to bottom, white 75%, transparent), url('../img/school_background.jpeg');
+	height: 950px;
+	background: linear-gradient(to bottom, white 87%, transparent), url('../img/school_background.jpeg');
 	background-size: cover;
 	border-radius: 5px;
 }
@@ -190,7 +298,18 @@ footer img {
 }
 
 .lessons_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
 	text-align: left;
+}
+
+.lessons_wrap .right_content {
+	margin-top: 32px;
+	float: left;
+	width: 28%;
 }
 
 .lessons_wrap .right_content img {
@@ -340,11 +459,11 @@ footer img {
 #privateLessons_content_wrap {
 	max-width: 1200px;
 	margin: 0 auto;
-	height: 900px;
+	height: 1000px;
 	background: linear-gradient(to bottom, white 50%, transparent), url('../img/privateLesson.jpeg');
 	background-size: cover;
-	border-radius: 5px;	
 }
+
 
 .privateLessons_wrap {
 	margin: auto;
@@ -454,6 +573,7 @@ footer img {
 @media (max-width: 450px) {
 	header {
 		font-size: 12px;
+		padding-bottom: 0px;
 	}
 	header .header_img img {
 		width: 70%;
@@ -464,13 +584,126 @@ footer img {
 	nav {
 		display: none;
 	}
+	.content_heading h1 {
+		font-size: 18px;
+		padding: 0 20px;
+		margin-bottom: 0px;
+	}
 	.privateLessons_wrap {
 		width: 95%;
 	}
 	.privateLessons_wrap .top_content {
 		margin-bottom: 5px;
 	}
-	.content_heading {
-		font-size: 12px;
+	#media {
+		display: block;
+	}
+	.schools_content_wrap {
+		height: 2500px;
+	}
+	.schools_wrap {
+		width: 95%;
+		
+	}
+	.schools_wrap .left_content {
+		width: 98%;
+		float: none;
+		padding: 0px;
+		margin: 0 auto;
+	}
+	.schools_wrap .left_content h2 {
+		font-size: 18px;
+		padding: 0px;
+		font-weight: bolder;
+	}
+	.schools_wrap .left_content p {
+		font-size: 14px;
+	}
+	.schools_wrap .right_content {
+		float: none;
+		width: 98%;
+	}
+	.schools_wrap .right_content img {
+		width: 40%;
+		margin-top: 5px;
+	}
+	.schools_wrap .right_content .top_image {
+		display: none;
+	}
+	.schools_wrap .right_content .bottom_image {
+		margin-top: 0px;
+	}
+	.reservations_wrap .left_content {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.reservations_wrap .center_content {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.reservations_wrap .left_content label {
+		font-size: 16px;
+	}
+	.reservations_wrap .center_content form input {
+		margin: 5px;
+	}
+	.reservations_wrap .right_content {
+		display: none;
+	}
+	.home_wrap {
+		width: 95%;
+	}
+	.home_wrap .left_content {
+		float: none;
+		margin-bottom: 5px;
+		width: 95%;
+		padding: 0px;
+		font-size: 17px;
+	}
+
+	.home_wrap .right_content {
+		float: none;
+		width: 90%;
+		margin: auto;
+	}
+
+	.home_wrap .right_content img {
+		width: 40%;
+	}
+
+	.home_wrap .right_content p {
+		background: #2196F3;
+		color: #fff;
+		border-radius: 5px;
+		padding: 7px;
+	}
+	.lessons_wrap {
+		width: 95%;
+	}
+	.lessons_wrap .left_content {
+		width: 95%;
+		padding: 0px;
+		float: none;
+		font-size: 18px;
+	}
+	.lessons_wrap .left_content ul {
+		padding: 0px;
+	}
+	.lessons_wrap .right_content {
+		width: 95%;
+		padding: 20px 0 0 0;
+		float: none;
+		margin: auto;
+	}
+	.lessons_wrap .right_content img {
+		width: 22%;
+	}
+	.lessons_wrap .right_content p {
+		background: #2196F3;
+		color: #fff;
+		padding: 10px;
+		border-radius: 5px;
 	}
 }
