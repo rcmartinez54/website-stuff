@@ -1,0 +1,306 @@
+/*---- Universal rules  ---*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+.clearfix::before {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrap {
+  width: 95%;
+  margin: auto;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*--- Navigation bar  ---*/
+
+header {
+  background-color: white;
+  padding: .625em 0;
+  position: fixed;
+  width: 75em;
+  top: 0;
+  
+}
+
+.header img {
+  display: inline;
+  width: 5%;
+}
+
+.header nav {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  padding-top: 15px;
+}
+
+nav ul {
+  margin: 0;
+  display: inline;
+  padding-right: 1.125em;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 0;
+  border-bottom: 2px solid transparent;
+  color: #000;
+  transition: all .3s;
+}
+
+nav a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fa8000;
+  color: #fa8000;
+}
+
+.header ul li {
+  padding-left: 2.25em;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 96%;
+  }
+  .header img {
+    display: none;
+  }
+  .header ul li {
+    padding-left: 0;
+  }
+  nav {
+    padding: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    text-decoration: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: .10em;
+  }
+  nav li {
+    background-color: lightgray;
+    border-radius: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: .60em;
+    list-style: none;
+    width: 90%;
+  }
+  nav a {
+    padding: 1em;
+    text-decoration: none;
+  }
+  /*
+  .banner h3 {
+    padding-top: 35em;
+    padding-left: 1.8em;
+    font-size: .95em;
+  }
+  */
+}
+
+@media (max-width: 770px) {
+  .header img {
+    display: none;
+  }
+  .nav ul {
+    text-align: center;
+  }
+  .nav ul li {
+    list-style: none;
+  }
+}
+
+/*--- Top banner  ---*/
+
+.banner {
+  background: linear-gradient(to bottom, transparent, black 40%, transparent), url('../img/kettleBell.jpeg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner h1 {
+  padding-top: 1.375em;
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-weight: 300;
+}
+
+.banner h2 {
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.banner h1 span, 
+.banner h2 span {
+  display: block;
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  div.banner-text {
+    padding-top: 30em;
+  }
+  div.banner-text h2 {
+    margin-left: 1em;
+  }
+}
+
+/* -- Section Styles -- */
+
+#section_one, #section_three {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+}
+
+#section_one {
+  border-bottom: 1px solid black;
+  padding-top: 90px;
+  font-size: 1.1em;
+}
+
+#section_two {
+  background: #fff;
+  width: 100%;
+  height: 1200px;
+  margin: auto;
+  padding-top: 40px;
+  font-size: 1.1em;
+}
+
+#section_two .section_wrap .mmInfo {
+  margin-bottom: 40px;
+}
+
+#section_two .section_wrap .mminfo_imgs img {
+  float: left;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+#section_two .section_wrap .mminfo_imgs .img1 {
+  width: 60%;
+}
+
+#section_two .section_wrap .mminfo_imgs .img2 {
+  width: 37%;
+}
+
+#section_two .section_wrap .mminfo_imgs .img3 {
+  width: 20%;
+}
+
+#section_two .section_wrap .mminfo_imgs .img4 {
+  width: 77%;
+}
+
+#section_two .section_wrap .mminfo_imgs .img5 {
+  width: 20%;
+}
+
+#section_one .section_wrap .left_side {
+  float: left;
+  margin: auto;
+  width: 30%;
+}
+
+#section_one .section_wrap .left_side img {
+  width: 100%;
+  padding: 25px;
+}
+
+#section_one .section_wrap .right_side {
+  float: right;
+  width: 68%;
+}
+
+#section_three {
+  background: url('../img/location.png');
+  background-size: cover;
+}
+
+#section_three .location {
+  float: left;
+  width: 50%;
+  margin: auto;
+}
+
+#section_three .location .form {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#section_three .location .form input {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+#section_three .location .form textarea {
+  padding-bottom: 80px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.section_wrap {
+  width: 70%;
+  margin: auto;
+  background: #fff;
+}
+
+
+
+/* -- Footer -- */
+
+footer {
+  background: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
