@@ -189,6 +189,20 @@ nav a:hover {
   }
 }
 
+/* -- Section One -- */
+
+#section_one {
+  width: 90%;
+  height: 100vh;
+}
+
+#section_one .one_wrap {
+  width: 70%;
+  margin: auto;
+}
+
+
+
 /*--- Section one  ---*/
 
 .section-one-wrapper {
