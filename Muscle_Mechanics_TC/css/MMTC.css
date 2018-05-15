@@ -9,8 +9,12 @@ a {
   color: black;
 }
 
+html {
+  background: #fff;
+}
+
 #container {
-  max-width: 75em;
+  max-width: 85em;
   margin: 0 auto;
 }
 
@@ -45,13 +49,14 @@ header {
   background-color: white;
   padding: .625em 0;
   position: fixed;
-  width: 75em;
+  width: 85em;
   top: 0;
-  
+  z-index: 10;
 }
 
 .header img {
   display: inline;
+  margin-left: 20px;
   width: 5%;
 }
 
@@ -150,20 +155,42 @@ nav a:hover {
   }
 }
 
-/*--- Top banner  ---*/
+/*--- Initial banner  ---*/
 
 .banner {
-  background: linear-gradient(to bottom, transparent, black 40%, transparent), url('../img/kettleBell.jpeg');
-  background-size: cover;
   height: 100vh;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.banner:after {
+  content: '';
+  background: url('../img/kettleBell.jpeg');
+  background-size: cover;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+} 
+
+.banner .banner_words {
+  padding-top: 8.575em;
+  text-transform: uppercase;
 }
 
 .banner h1 {
-  padding-top: 1.375em;
   text-align: center;
-  color: white;
+  margin-right: 200px;
+  margin-left: 200px;
+  background-color: #000;
+  color: #fff; 
   font-size: 100px;
   font-weight: 300;
+  opacity: 0.7;
 }
 
 .banner h2 {
@@ -189,6 +216,138 @@ nav a:hover {
   }
 }
 
+/*--- Secondary banner  ---*/
+
+.banner2 {
+  height: 100vh;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.banner2:after {
+  content: '';
+  background: url('../img/trxBands.jpeg');
+  background-size: cover;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+} 
+
+.banner2 .banner2_words {
+  padding-top: 8.575em;
+  text-transform: uppercase;
+}
+
+.banner2 h1 {
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: #000; 
+  font-size: 100px;
+  font-weight: 300;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.banner2 h2 {
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.banner2 h1 span, 
+.banner2 h2 span {
+  display: block;
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  div.banner2-text {
+    padding-top: 30em;
+  }
+  div.banner2-text h2 {
+    margin-left: 1em;
+  }
+}
+
+/*--- Tertiary banner  ---*/
+
+.banner3 {
+  height: 100vh;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.banner3:after {
+  content: '';
+  background: url('../img/mmtc_wod.png');
+  background-size: cover;
+  width: 100%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+} 
+
+.banner3 .banner3_words {
+  padding-top: 8.575em;
+  text-transform: uppercase;
+}
+
+.banner3 h1 {
+  font-family: 'Monoton', cursive;
+  word-spacing: 30px;
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  color: yellow; 
+  font-size: 100px;
+  font-weight: 300;
+  opacity: 0.8;
+  text-align: center;
+  background: #000;
+  padding: 8px;
+  height: 0;
+  width: 0;
+  border-left: 100px solid red;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+}
+
+.banner3 h2 {
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.banner3 h1 span, 
+.banner3 h2 span {
+  display: block;
+  font-size: 30px;
+}
+
+@media (max-width: 480px) {
+  div.banner3-text {
+    padding-top: 30em;
+  }
+  div.banner3-text h2 {
+    margin-left: 1em;
+  }
+}
+
 /* -- Section Styles -- */
 
 #section_one, #section_three {
@@ -198,48 +357,28 @@ nav a:hover {
 }
 
 #section_one {
-  border-bottom: 1px solid black;
+  position: relative;
   padding-top: 90px;
   font-size: 1.1em;
-}
-
-#section_two {
   background: #fff;
-  width: 100%;
-  height: 1200px;
-  margin: auto;
-  padding-top: 40px;
-  font-size: 1.1em;
 }
 
-#section_two .section_wrap .mmInfo {
-  margin-bottom: 40px;
+#section_one:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 25%;
+  width: 75%;
+  border-top: 3px solid black;
 }
 
-#section_two .section_wrap .mminfo_imgs img {
-  float: left;
-  margin: 5px;
-  border: 1px solid black;
-}
-
-#section_two .section_wrap .mminfo_imgs .img1 {
-  width: 60%;
-}
-
-#section_two .section_wrap .mminfo_imgs .img2 {
-  width: 37%;
-}
-
-#section_two .section_wrap .mminfo_imgs .img3 {
-  width: 20%;
-}
-
-#section_two .section_wrap .mminfo_imgs .img4 {
-  width: 77%;
-}
-
-#section_two .section_wrap .mminfo_imgs .img5 {
-  width: 20%;
+#section_one:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 25%;
+  width: 75%;
+  border-bottom: 1px solid darkgray;
 }
 
 #section_one .section_wrap .left_side {
@@ -251,11 +390,86 @@ nav a:hover {
 #section_one .section_wrap .left_side img {
   width: 100%;
   padding: 25px;
+  opacity: 0.7;
+}
+
+#section_one .section_wrap .left_side img:hover {
+  opacity: 1.0;
 }
 
 #section_one .section_wrap .right_side {
   float: right;
+  margin-top: 0;
+  padding: 100px 10px 10px;
   width: 68%;
+  color: #000;
+  position: relative;
+  opacity: 1.0;
+}
+
+#section_one .section_wrap .right_side:hover {
+  opacity: 1.0;
+}
+
+#section_one .section_wrap .right_side h2 {
+  padding: 10px;
+  background: #000;
+  position: absolute;
+  top: 3px;
+  left: -25px;
+  z-index: 2;
+  color: #fff;
+  opacity: 0.6;
+}
+
+#section_two {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  margin: auto;
+  padding-top: 40px;
+  font-size: 1.1em;
+}
+
+#section_two .mmInfo h2 {
+  position: absolute;
+  background: #000;
+  color: white;
+  left: 200px;
+  top: 40px;
+  padding: 10px;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+#section_two .mmInfo p {
+  margin-top: 160px;
+}
+
+#section_two .section_wrap .mmInfo {
+  margin-bottom: 40px;
+}
+
+.Info_slides {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Info_slides ul {
+  list-style: none;
+  position: relative;
+  width: 1500px;
+  left: -1000px;
+  padding: 0;
+  margin: 0;
+}
+
+.Info_slides ul li {
+  float: left;
+}
+
+.Info_slides ul li img {
+  width: 100%;
 }
 
 #section_three {
@@ -299,7 +513,7 @@ nav a:hover {
 /* -- Footer -- */
 
 footer {
-  background: #000;
+  background: lightgray;
   color: white;
   padding: 20px;
   text-align: center;
