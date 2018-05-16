@@ -9,10 +9,6 @@ a {
   color: black;
 }
 
-img {
-  
-}
-
 .container {
   max-width: 75em;
   margin: 0 auto;
@@ -189,17 +185,7 @@ nav a:hover {
   }
 }
 
-/* -- Section One -- */
 
-#section_one {
-  width: 90%;
-  height: 100vh;
-}
-
-#section_one .one_wrap {
-  width: 70%;
-  margin: auto;
-}
 
 
 

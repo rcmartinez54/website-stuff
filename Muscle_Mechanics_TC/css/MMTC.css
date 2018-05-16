@@ -222,6 +222,7 @@ nav a:hover {
   height: 100vh;
   border-bottom: 1px solid #fff;
   position: relative;
+  display: none;
 }
 
 .banner2:after {
@@ -238,8 +239,77 @@ nav a:hover {
   z-index: -1;
 } 
 
+.banner .btn_circle {
+  background: #fff;
+  border-radius: 50%;
+}
+
+.banner .left_btn,
+.banner2 .left_btn,
+.banner3 .left_btn {
+  position: absolute;
+  left: -50px;
+  top: 266px;
+  height: 0;
+  width: 0;
+  border-right: 50px solid white;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  cursor: pointer;
+  transition: border-right 0.6s ease;
+}
+
+.banner .right_btn,
+.banner2 .right_btn,
+.banner3 .right_btn {
+  position: absolute;
+  right: -50px;
+  top: 266px;
+  height: 0;
+  width: 0;
+  border-left: 50px solid white;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid transparent;
+  cursor: pointer;
+  transition: border-left 0.6s ease;
+}
+
+.banner .left_btn:hover,
+.banner2 .left_btn:hover,
+.banner3 .left_btn:hover {
+  border-right: 70px solid yellow;
+}
+
+.banner .right_btn:hover,
+.banner2 .right_btn:hover,
+.banner3 .right_btn:hover {
+  border-left: 70px solid yellow;
+}
+
+.banner .dots {
+  text-align: center;
+}
+
+.banner .dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #000;
+}
+
+
 .banner2 .banner2_words {
-  padding-top: 8.575em;
+  padding-top: 6.575em;
   text-transform: uppercase;
 }
 
@@ -249,7 +319,7 @@ nav a:hover {
   margin-left: 200px;
   color: #000; 
   font-size: 100px;
-  font-weight: 300;
+  font-weight: bolder;
   opacity: 0.7;
   text-align: left;
 }
@@ -283,14 +353,15 @@ nav a:hover {
   height: 100vh;
   border-bottom: 1px solid #fff;
   position: relative;
+  display: none;
 }
 
 .banner3:after {
   content: '';
-  background: url('../img/mmtc_wod.png');
+  background: url('../img/deadLifts.jpeg');
   background-size: cover;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
@@ -300,7 +371,7 @@ nav a:hover {
 } 
 
 .banner3 .banner3_words {
-  padding-top: 8.575em;
+  padding-top: 6.575em;
   text-transform: uppercase;
 }
 
@@ -313,16 +384,10 @@ nav a:hover {
   color: yellow; 
   font-size: 100px;
   font-weight: 300;
-  opacity: 0.8;
+  text-shadow: 4px 4px 2px black;
   text-align: center;
-  background: #000;
+  
   padding: 8px;
-  height: 0;
-  width: 0;
-  border-left: 100px solid red;
-  border-right: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-top: 100px solid transparent;
 }
 
 .banner3 h2 {
@@ -381,6 +446,11 @@ nav a:hover {
   border-bottom: 1px solid darkgray;
 }
 
+#section_one .section_wrap,
+#section_two .section_wrap {
+  width: 90%;
+}
+
 #section_one .section_wrap .left_side {
   float: left;
   margin: auto;
@@ -435,7 +505,7 @@ nav a:hover {
   position: absolute;
   background: #000;
   color: white;
-  left: 200px;
+  left: 70px;
   top: 40px;
   padding: 10px;
   opacity: 0.6;
@@ -451,35 +521,58 @@ nav a:hover {
 }
 
 .Info_slides {
-  width: 100%;
-  overflow: hidden;
+  background: #fff;
 }
 
-.Info_slides ul {
-  list-style: none;
-  position: relative;
-  width: 1500px;
-  left: -1000px;
-  padding: 0;
-  margin: 0;
-}
-
-.Info_slides ul li {
+.Info_slides .info_imgs .imgs {
   float: left;
+  padding: 10px;
+  width: 50%;
 }
 
-.Info_slides ul li img {
+.Info_slides .info_imgs .imgs:nth-child(3n) {
+  margin-top: -140px;
+}
+
+.Info_slides .info_imgs .imgs:nth-child(8n) {
+  margin-top: -680px;
+}
+
+.Info_slides .info_imgs .imgs:nth-child(9n) {
+  margin-top: -230px;
+}
+
+.Info_slides .info_imgs .imgs:nth-child(11n) {
+  margin-top: -450px;
+}
+
+.Info_slides .info_imgs .imgs:nth-child(12n) {
+  margin-top: 10px;
+}
+
+.Info_slides .info_imgs .imgs:nth-child(13n) {
+  margin-top: -620px;
+}
+
+.Info_slides .info_imgs .imgs:last-child {
+  float: none;
+  width: 100%;
+}
+
+.Info_slides .info_imgs .imgs img {
   width: 100%;
 }
 
 #section_three {
   background: url('../img/location.png');
   background-size: cover;
+  margin-top: 20px;
+  border-top: 1px solid black;
 }
 
 #section_three .location {
   float: left;
-  width: 50%;
+  width: 55%;
   margin: auto;
 }
 
