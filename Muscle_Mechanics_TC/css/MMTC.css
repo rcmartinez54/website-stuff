@@ -501,6 +501,10 @@ nav a:hover {
   font-size: 1.1em;
 }
 
+#section_two .mediaPlayer {
+  text-align: center;
+}
+
 #section_two .mmInfo h2 {
   position: absolute;
   background: #000;
