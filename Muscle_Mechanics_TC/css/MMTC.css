@@ -46,12 +46,22 @@ h1, h2, h3, h4 {
 /*--- Navigation bar  ---*/
 
 header {
-  background-color: white;
+  background-color: #fff;
   padding: .625em 0;
   position: fixed;
   width: 85em;
   top: 0;
   z-index: 10;
+}
+
+.scroll {
+  background-color: #f2f2f2;
+  padding: .625em 0;
+  position: fixed;
+  width: 85em;
+  top: 0;
+  z-index: 10;
+  transition: all 3s;
 }
 
 .header img {
@@ -155,12 +165,53 @@ nav a:hover {
   }
 }
 
+/* -- Universal Banner Styles -- */
+
+.banner .top_btn,
+.banner2 .top_btn,
+.banner3 .top_btn {
+  margin: auto;
+  height: 0;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #000;
+  border-top: 50px solid transparent;
+  cursor: pointer;
+  transition: border-bottom 0.9s ease;
+}
+
+.btm_btn {
+  margin: auto;
+  height: 0;
+  width: 0;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid #000;
+  cursor: pointer;
+  transition: border-top 0.9s ease;
+}
+
+.banner .btm_btn:hover,
+.banner2 .btm_btn:hover,
+.banner3 .btm_btn:hover {
+  border-bottom: 50px solid yellow;
+}
+
+.banner .top_btn:hover,
+.banner2 .top_btn:hover,
+.banner3 .top_btn:hover {
+  border-bottom: 50px solid yellow;
+}
+
 /*--- Initial banner  ---*/
 
 .banner {
   height: 100vh;
   border-bottom: 1px solid #fff;
   position: relative;
+  z-index: 1;
 }
 
 .banner:after {
@@ -176,6 +227,10 @@ nav a:hover {
   right: 0;
   z-index: -1;
 } 
+
+.banner .btm_btn {
+  display: none;
+}
 
 .banner .banner_words {
   padding-top: 8.575em;
@@ -239,74 +294,24 @@ nav a:hover {
   z-index: -1;
 } 
 
-.banner .btn_circle {
-  background: #fff;
-  border-radius: 50%;
-}
+// .banner .dots {
+//   text-align: center;
+// }
 
-.banner .left_btn,
-.banner2 .left_btn,
-.banner3 .left_btn {
-  position: absolute;
-  left: -50px;
-  top: 266px;
-  height: 0;
-  width: 0;
-  border-right: 50px solid white;
-  border-left: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-top: 50px solid transparent;
-  cursor: pointer;
-  transition: border-right 0.6s ease;
-}
+// .banner .dot {
+//   cursor: pointer;
+//   height: 25px;
+//   width: 25px;
+//   margin: 0 10px;
+//   background-color: #bbb;
+//   border-radius: 50%;
+//   display: inline-block;
+//   transition: background-color 0.6s ease;
+// }
 
-.banner .right_btn,
-.banner2 .right_btn,
-.banner3 .right_btn {
-  position: absolute;
-  right: -50px;
-  top: 266px;
-  height: 0;
-  width: 0;
-  border-left: 50px solid white;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-top: 50px solid transparent;
-  cursor: pointer;
-  transition: border-left 0.6s ease;
-}
-
-.banner .left_btn:hover,
-.banner2 .left_btn:hover,
-.banner3 .left_btn:hover {
-  border-right: 70px solid yellow;
-}
-
-.banner .right_btn:hover,
-.banner2 .right_btn:hover,
-.banner3 .right_btn:hover {
-  border-left: 70px solid yellow;
-}
-
-.banner .dots {
-  text-align: center;
-}
-
-.banner .dot {
-  cursor: pointer;
-  height: 25px;
-  width: 25px;
-  margin: 0 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #000;
-}
-
+// .active, .dot:hover {
+//   background-color: #000;
+// }
 
 .banner2 .banner2_words {
   padding-top: 6.575em;
@@ -369,6 +374,10 @@ nav a:hover {
   right: 0;
   z-index: -1;
 } 
+
+.banner3 .top_btn {
+ 
+}
 
 .banner3 .banner3_words {
   padding-top: 6.575em;
@@ -516,7 +525,7 @@ nav a:hover {
   z-index: 1;
 }
 
-#section_two .mmInfo p {
+#section_two .mmInfo .first_p {
   margin-top: 160px;
 }
 
@@ -538,16 +547,20 @@ nav a:hover {
   margin-top: -140px;
 }
 
+.Info_slides .info_imgs .imgs:nth-child(6n) {
+  margin-top: 1px;
+}
+
 .Info_slides .info_imgs .imgs:nth-child(8n) {
-  margin-top: -680px;
+  margin-top: -800px;
 }
 
 .Info_slides .info_imgs .imgs:nth-child(9n) {
-  margin-top: -230px;
+  margin-top: -350px;
 }
 
 .Info_slides .info_imgs .imgs:nth-child(11n) {
-  margin-top: -450px;
+  margin-top: -570px;
 }
 
 .Info_slides .info_imgs .imgs:nth-child(12n) {
@@ -555,7 +568,7 @@ nav a:hover {
 }
 
 .Info_slides .info_imgs .imgs:nth-child(13n) {
-  margin-top: -620px;
+  margin-top: -760px;
 }
 
 .Info_slides .info_imgs .imgs:last-child {
@@ -568,10 +581,23 @@ nav a:hover {
 }
 
 #section_three {
-  background: url('../img/location.png');
-  background-size: cover;
   margin-top: 20px;
   border-top: 1px solid black;
+  position: relative;
+}
+
+#section_three:after{
+  content: '';
+  background: url('../img/trxBands.jpeg');
+  background-size: cover;
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 #section_three .location {
@@ -582,21 +608,45 @@ nav a:hover {
 
 #section_three .location .form {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 #section_three .location .form input {
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
   width: 80%;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 #section_three .location .form textarea {
-  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   width: 80%;
   border-radius: 5px;
+  margin: 20px;
+  font-size: 16px;
+}
+
+#section_three .test {
+  float: right;
+  width: 45%;
+  margin-top: 60px;
+  text-align: center;
+}
+
+#section_three .test img {
+  width: 45%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#section_three .test p {
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .section_wrap {
@@ -610,8 +660,17 @@ nav a:hover {
 /* -- Footer -- */
 
 footer {
-  background: lightgray;
+  background: #bbb;
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+footer .social_media {
+  margin: auto;
+}
+
+footer .social_media img {
+  padding: 10px;
+  width: 8%;
 }
