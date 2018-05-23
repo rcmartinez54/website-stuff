@@ -14,7 +14,7 @@ html {
 }
 
 #container {
-  max-width: 85em;
+  max-width: 90em;
   margin: 0 auto;
 }
 
@@ -28,15 +28,10 @@ html {
   clear: both;
 }
 
-.wrap {
-  width: 95%;
-  margin: auto;
-}
-
 body {
   font-family: 'Dosis', sans-serif;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -46,19 +41,21 @@ h1, h2, h3, h4 {
 /*--- Navigation bar  ---*/
 
 header {
-  background-color: #fff;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
   padding: .625em 0;
   position: fixed;
-  width: 85em;
+  width: 90em;
   top: 0;
   z-index: 10;
+  display: none;
 }
 
 .scroll {
-  background-color: #f2f2f2;
+  background-color: #000;
   padding: .625em 0;
   position: fixed;
-  width: 85em;
+  width: 90em;
   top: 0;
   z-index: 10;
   transition: all 3s;
@@ -90,20 +87,22 @@ nav ul li {
   display: inline-block;
   list-style: none;
   padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 12px;
 }
 
 nav a {
+  color: yellow;
   text-decoration: none;
   padding-bottom: 0;
   border-bottom: 2px solid transparent;
-  color: #000;
   transition: all .3s;
 }
 
 nav a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #fa8000;
-  color: #fa8000;
+  color: ##fa8000;
 }
 
 .header ul li {
@@ -179,6 +178,7 @@ nav a:hover {
   border-top: 50px solid transparent;
   cursor: pointer;
   transition: border-bottom 0.9s ease;
+  display: none;
 }
 
 .btm_btn {
@@ -208,7 +208,7 @@ nav a:hover {
 /*--- Initial banner  ---*/
 
 .banner {
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid #fff;
   position: relative;
   z-index: 1;
@@ -233,7 +233,7 @@ nav a:hover {
 }
 
 .banner .banner_words {
-  padding-top: 8.575em;
+  padding-top: 5.575em;
   text-transform: uppercase;
 }
 
@@ -245,7 +245,7 @@ nav a:hover {
   color: #fff; 
   font-size: 100px;
   font-weight: 300;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .banner h2 {
@@ -422,6 +422,60 @@ nav a:hover {
   }
 }
 
+#options {
+  width: 100%;
+
+}
+
+#options .nav_options {
+  position: relative;
+  float: left;
+  width: 32.842%;
+  height: 30vh;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#options .nav_options:first-child:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/strengthTraining.jpeg');
+  background-size: cover;
+  z-index: -1;
+}
+
+#options .nav_options:first-child {
+  margin-left: 0px;
+}
+
+#options .nav_options:nth-of-type(2n) {
+  background: url('../img/nutrition.jpeg');
+  background-size: cover;
+}
+
+#options .nav_options:last-child {
+  margin-right: 0px;
+  background: url('../img/purpose.jpeg');
+  background-size: cover;
+}
+
+#options .nav_options h3 {
+  display: block;
+  padding-top: 70px;
+  color: white;
+  z-index: 2;
+}
+
+#options .nav_options:hover {
+  opacity: 0.2;
+}
+
 /* -- Section Styles -- */
 
 #section_one, #section_three {
@@ -443,7 +497,7 @@ nav a:hover {
   top: 0px;
   left: 25%;
   width: 75%;
-  border-top: 3px solid black;
+  border-top: 1px solid black;
 }
 
 #section_one:after {
@@ -457,13 +511,14 @@ nav a:hover {
 
 #section_one .section_wrap,
 #section_two .section_wrap {
-  width: 90%;
+  width: 99%;
 }
 
 #section_one .section_wrap .left_side {
   float: left;
   margin: auto;
   width: 30%;
+  display: none;
 }
 
 #section_one .section_wrap .left_side img {
@@ -493,12 +548,16 @@ nav a:hover {
 #section_one .section_wrap .right_side h2 {
   padding: 10px;
   background: #000;
+  color: yellow;
   position: absolute;
   top: 3px;
   left: -25px;
   z-index: 2;
-  color: #fff;
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+#section_one .section_wrap .right_side p {
+  line-height: 30px;
 }
 
 #section_two {
@@ -508,16 +567,21 @@ nav a:hover {
   margin: auto;
   padding-top: 40px;
   font-size: 1.1em;
+  background: url('../img/section_background.jpg');
+  background-size: cover;
 }
 
-#section_two .mediaPlayer {
-  text-align: center;
+#section_two .mmInfo {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 30px;
+  font-size: 20px;
 }
 
 #section_two .mmInfo h2 {
   position: absolute;
   background: #000;
-  color: white;
+  color: yellow;
   left: 70px;
   top: 40px;
   padding: 10px;
@@ -534,41 +598,72 @@ nav a:hover {
 }
 
 .Info_slides {
-  background: #fff;
+  background: url('..img/section3Background.jpg');
+  padding-bottom: 20px;
 }
 
-.Info_slides .info_imgs .imgs {
-  float: left;
-  padding: 10px;
-  width: 50%;
+// #showContainer {
+//   width: 640px;
+//   padding: 0;
+//   margin: 0 auto;
+//   overflow: hidden;
+//   position: relative;
+//   padding-top: 20px;
+// }
+
+// .navButton {
+//   cursor: pointer;
+//   float: left;
+//   width: 100px;
+//   height: 43px;
+//   padding: 10px;
+//   margin-right: 5px;
+//   overflow: hidden;
+//   text-align: center;
+//   color: white;
+//   font-weight: bold;
+//   font-size: 18px;
+//   background: #000000;
+//   opacity: 0.65;
+//   user-select: none;
+// }
+
+// .navButton:hover {
+//   opacity: 1;
+// }
+
+// .caption {
+//   float: right;
+// }
+
+// .imageContainer:not(:first-child) {
+//   display: none;
+// }
+
+// .slide_img {
+//   width: 100%;
+// }
+
+// .Info_slides .info_imgs {
+  
+// }
+
+.Info_slides .info_imgs {
+  text-align: center;
+  display: none;
 }
 
-.Info_slides .info_imgs .imgs:nth-child(3n) {
-  margin-top: -140px;
-}
+// .Info_slides .info_imgs img {
+//   border: 1px solid #fff;
+// }
 
-.Info_slides .info_imgs .imgs:nth-child(6n) {
-  margin-top: 1px;
-}
+// .Info_slides .info_imgs img:nth-child(8n) {
+//   margin-right: 15px;
+//   margin-left: 15px;
+// }
 
-.Info_slides .info_imgs .imgs:nth-child(8n) {
-  margin-top: -800px;
-}
-
-.Info_slides .info_imgs .imgs:nth-child(9n) {
-  margin-top: -350px;
-}
-
-.Info_slides .info_imgs .imgs:nth-child(11n) {
-  margin-top: -570px;
-}
-
-.Info_slides .info_imgs .imgs:nth-child(12n) {
-  margin-top: 10px;
-}
-
-.Info_slides .info_imgs .imgs:nth-child(13n) {
-  margin-top: -760px;
+.Info_slides .info_imgs {
+  padding-top: 10px;
 }
 
 .Info_slides .info_imgs .imgs:last-child {
@@ -576,14 +671,11 @@ nav a:hover {
   width: 100%;
 }
 
-.Info_slides .info_imgs .imgs img {
-  width: 100%;
-}
-
 #section_three {
-  margin-top: 20px;
+  margin-top: 0px;
   border-top: 1px solid black;
   position: relative;
+  margin-top: 20px;
 }
 
 #section_three:after{
@@ -608,8 +700,12 @@ nav a:hover {
 
 #section_three .location .form {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 70px;
+}
+
+#section_three .location .form h2 {
+  margin-top: 0px;
 }
 
 #section_three .location .form input {
@@ -643,13 +739,17 @@ nav a:hover {
   border: 1px solid black;
 }
 
+#section_three .test {
+  display: none;
+}
+
 #section_three .test p {
   font-size: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-.section_wrap {
+#section_three .section_wrap {
   width: 70%;
   margin: auto;
   background: #fff;
@@ -660,8 +760,8 @@ nav a:hover {
 /* -- Footer -- */
 
 footer {
-  background: #bbb;
-  color: white;
+  background: gray;
+  color: yellow;
   padding: 20px;
   text-align: center;
 }
