@@ -16,21 +16,57 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function() {
-       if ($(document).scrollTop() > 1880) {
+       if ($(document).scrollTop() > 1640) {
         $(".info_imgs").fadeIn(800);
        } 
     });
 
-	function fadeTest() {
-		let counter = 0;
-		let test = $('.test');
+    let counter = 0;
 
-		for (i = 0; i < test.length; i++) {
-			test.fadeIn(1000);
-		}
-	};
+    function rotateTest() {
+    	 
+    	let $test = $('.test');
+    	setTimeout(function() {
+    		$test.eq(counter).fadeOut(500, function() {
+    			if (counter <= $test.length -2) {
+	    			counter++; 
+		    	} else {
+		    		counter = 0;
+		    	}
 
-	// fadeTest();
+		    	$test.eq(counter).fadeIn(800);
+
+		    	rotateTest();
+    		});
+
+	    	
+    	}, 5000);
+    }
+
+    rotateTest();
+
+    // function nextBanner() {
+
+    // 	let $banner = $('.show');
+    // 	setTimeout(function() {
+    // 		$banner.eq(counter).fadeOut(500, function() {
+    // 			if (counter <= $banner.length -2) {
+    // 				console.log($banner.length);
+    // 				counter++;
+    // 			} else {
+    // 				counter = 0;
+    // 			}
+
+    // 			$banner.eq(counter).fadeIn(500);
+
+    // 			nextBanner();
+    // 		});
+    // 	}, 5000);
+
+    // }
+
+    // nextBanner();
+
 })
 
 
