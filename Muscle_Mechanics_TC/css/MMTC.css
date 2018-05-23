@@ -274,7 +274,7 @@ nav a:hover {
 /*--- Secondary banner  ---*/
 
 .banner2 {
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid #fff;
   position: relative;
   display: none;
@@ -355,7 +355,7 @@ nav a:hover {
 /*--- Tertiary banner  ---*/
 
 .banner3 {
-  height: 100vh;
+  height: 90vh;
   border-bottom: 1px solid #fff;
   position: relative;
   display: none;
@@ -430,7 +430,7 @@ nav a:hover {
 #options .nav_options {
   position: relative;
   float: left;
-  width: 32.842%;
+  width: 32.85%;
   height: 30vh;
   text-align: center;
   margin: 5px;
@@ -741,6 +741,10 @@ nav a:hover {
 
 #section_three .test {
   display: none;
+}
+
+#section_three .test:first-child {
+  display: block;
 }
 
 #section_three .test p {
