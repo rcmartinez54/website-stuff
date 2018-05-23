@@ -36,9 +36,6 @@
 //       }
 //     }
 //   });
-18774171324
-
-18004404002 scorepoints card
 
 
 $('a[href^="#"]').on('click', function(event) {
