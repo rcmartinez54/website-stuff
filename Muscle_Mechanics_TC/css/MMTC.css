@@ -164,73 +164,30 @@ nav a:hover {
   }
 }
 
-/* -- Universal Banner Styles -- */
-
-.banner .top_btn,
-.banner2 .top_btn,
-.banner3 .top_btn {
-  margin: auto;
-  height: 0;
-  width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid #000;
-  border-top: 50px solid transparent;
-  cursor: pointer;
-  transition: border-bottom 0.9s ease;
-  display: none;
-}
-
-.btm_btn {
-  margin: auto;
-  height: 0;
-  width: 0;
-  border-right: 50px solid transparent;
-  border-left: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-top: 50px solid #000;
-  cursor: pointer;
-  transition: border-top 0.9s ease;
-}
-
-.banner .btm_btn:hover,
-.banner2 .btm_btn:hover,
-.banner3 .btm_btn:hover {
-  border-bottom: 50px solid yellow;
-}
-
-.banner .top_btn:hover,
-.banner2 .top_btn:hover,
-.banner3 .top_btn:hover {
-  border-bottom: 50px solid yellow;
-}
-
-/*--- Initial banner  ---*/
+/*--- Banner  ---*/
 
 .banner {
   height: 90vh;
   border-bottom: 1px solid #fff;
   position: relative;
   z-index: 1;
-}
-
-.banner:after {
-  content: '';
-  background: url('../img/kettleBell.jpeg');
+  background: url('../img/kettleBell.jpg');
   background-size: cover;
-  width: 100%;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-} 
-
-.banner .btm_btn {
-  display: none;
 }
+
+// .banner:after {
+//   content: '';
+//   background: url('../img/kettleBell.jpeg');
+//   background-size: cover;
+//   width: 100%;
+//   opacity: 0.5;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   z-index: -1;
+// } 
 
 .banner .banner_words {
   padding-top: 5.575em;
@@ -245,7 +202,7 @@ nav a:hover {
   color: #fff; 
   font-size: 100px;
   font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .banner h2 {
@@ -271,156 +228,7 @@ nav a:hover {
   }
 }
 
-/*--- Secondary banner  ---*/
 
-.banner2 {
-  height: 90vh;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  display: none;
-}
-
-.banner2:after {
-  content: '';
-  background: url('../img/trxBands.jpeg');
-  background-size: cover;
-  width: 100%;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-} 
-
-// .banner .dots {
-//   text-align: center;
-// }
-
-// .banner .dot {
-//   cursor: pointer;
-//   height: 25px;
-//   width: 25px;
-//   margin: 0 10px;
-//   background-color: #bbb;
-//   border-radius: 50%;
-//   display: inline-block;
-//   transition: background-color 0.6s ease;
-// }
-
-// .active, .dot:hover {
-//   background-color: #000;
-// }
-
-.banner2 .banner2_words {
-  padding-top: 6.575em;
-  text-transform: uppercase;
-}
-
-.banner2 h1 {
-  text-align: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  color: #000; 
-  font-size: 100px;
-  font-weight: bolder;
-  opacity: 0.7;
-  text-align: left;
-}
-
-.banner2 h2 {
-  padding-top: 1em;
-  text-align: center;
-  color: white;
-  font-weight: 300;
-  font-size: 80px;
-}
-
-.banner2 h1 span, 
-.banner2 h2 span {
-  display: block;
-  font-size: 30px;
-}
-
-@media (max-width: 480px) {
-  div.banner2-text {
-    padding-top: 30em;
-  }
-  div.banner2-text h2 {
-    margin-left: 1em;
-  }
-}
-
-/*--- Tertiary banner  ---*/
-
-.banner3 {
-  height: 90vh;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  display: none;
-}
-
-.banner3:after {
-  content: '';
-  background: url('../img/deadLifts.jpeg');
-  background-size: cover;
-  width: 100%;
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-} 
-
-.banner3 .top_btn {
- 
-}
-
-.banner3 .banner3_words {
-  padding-top: 6.575em;
-  text-transform: uppercase;
-}
-
-.banner3 h1 {
-  font-family: 'Monoton', cursive;
-  word-spacing: 30px;
-  text-align: center;
-  margin-right: 200px;
-  margin-left: 200px;
-  color: yellow; 
-  font-size: 100px;
-  font-weight: 300;
-  text-shadow: 4px 4px 2px black;
-  text-align: center;
-  
-  padding: 8px;
-}
-
-.banner3 h2 {
-  padding-top: 1em;
-  text-align: center;
-  color: white;
-  font-weight: 300;
-  font-size: 80px;
-}
-
-.banner3 h1 span, 
-.banner3 h2 span {
-  display: block;
-  font-size: 30px;
-}
-
-@media (max-width: 480px) {
-  div.banner3-text {
-    padding-top: 30em;
-  }
-  div.banner3-text h2 {
-    margin-left: 1em;
-  }
-}
 
 #options {
   width: 100%;
@@ -437,29 +245,19 @@ nav a:hover {
   cursor: pointer;
 }
 
-#options .nav_options:first-child:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+
+#options .strength {
+  margin-left: 0px;
   background: url('../img/strengthTraining.jpeg');
   background-size: cover;
-  z-index: -1;
 }
 
-#options .nav_options:first-child {
-  margin-left: 0px;
-}
-
-#options .nav_options:nth-of-type(2n) {
+#options .food {
   background: url('../img/nutrition.jpeg');
   background-size: cover;
 }
 
-#options .nav_options:last-child {
+#options .train {
   margin-right: 0px;
   background: url('../img/purpose.jpeg');
   background-size: cover;
@@ -476,13 +274,20 @@ nav a:hover {
   opacity: 0.2;
 }
 
-/* -- Section Styles -- */
+/* -- Universal Section Styles -- */
 
 #section_one, #section_three {
   width: 100%;
   height: 600px;
   margin: auto;
 }
+
+#section_one .section_wrap,
+#section_two .section_wrap {
+  width: 99%;
+}
+
+/* -- Section One -- */
 
 #section_one {
   position: relative;
@@ -507,11 +312,6 @@ nav a:hover {
   right: 25%;
   width: 75%;
   border-bottom: 1px solid darkgray;
-}
-
-#section_one .section_wrap,
-#section_two .section_wrap {
-  width: 99%;
 }
 
 #section_one .section_wrap .left_side {
@@ -560,6 +360,8 @@ nav a:hover {
   line-height: 30px;
 }
 
+/* -- Section Two -- */
+
 #section_two {
   position: relative;
   background: #fff;
@@ -602,65 +404,10 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
-// #showContainer {
-//   width: 640px;
-//   padding: 0;
-//   margin: 0 auto;
-//   overflow: hidden;
-//   position: relative;
-//   padding-top: 20px;
-// }
-
-// .navButton {
-//   cursor: pointer;
-//   float: left;
-//   width: 100px;
-//   height: 43px;
-//   padding: 10px;
-//   margin-right: 5px;
-//   overflow: hidden;
-//   text-align: center;
-//   color: white;
-//   font-weight: bold;
-//   font-size: 18px;
-//   background: #000000;
-//   opacity: 0.65;
-//   user-select: none;
-// }
-
-// .navButton:hover {
-//   opacity: 1;
-// }
-
-// .caption {
-//   float: right;
-// }
-
-// .imageContainer:not(:first-child) {
-//   display: none;
-// }
-
-// .slide_img {
-//   width: 100%;
-// }
-
-// .Info_slides .info_imgs {
-  
-// }
-
 .Info_slides .info_imgs {
   text-align: center;
   display: none;
 }
-
-// .Info_slides .info_imgs img {
-//   border: 1px solid #fff;
-// }
-
-// .Info_slides .info_imgs img:nth-child(8n) {
-//   margin-right: 15px;
-//   margin-left: 15px;
-// }
 
 .Info_slides .info_imgs {
   padding-top: 10px;
@@ -670,6 +417,8 @@ nav a:hover {
   float: none;
   width: 100%;
 }
+
+/* -- Section Three -- */
 
 #section_three {
   margin-top: 0px;
@@ -758,8 +507,6 @@ nav a:hover {
   margin: auto;
   background: #fff;
 }
-
-
 
 /* -- Footer -- */
 
