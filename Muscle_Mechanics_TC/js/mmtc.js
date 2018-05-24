@@ -45,58 +45,35 @@ $(document).ready(function() {
 
     rotateTest();
 
-    // function nextBanner() {
+    $(window).scroll(function() {
+       if ($(document).scrollTop() > 800) {
+       	$('#ads_left').removeClass('hide_ads_left').addClass('show_ads_left');
+       } else if ($(window).scrollTop() < 800) {
+       	$('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
+       }
+    });
 
-    // 	let $banner = $('.show');
-    // 	setTimeout(function() {
-    // 		$banner.eq(counter).fadeOut(500, function() {
-    // 			if (counter <= $banner.length -2) {
-    // 				console.log($banner.length);
-    // 				counter++;
-    // 			} else {
-    // 				counter = 0;
-    // 			}
+    $(window).scroll(function() {
+       if ($(document).scrollTop() > 3250) {
+       	$('#ads_left').removeClass('show_ads_left').addClass('hide_ads_left');
+       } 
+    });
 
-    // 			$banner.eq(counter).fadeIn(500);
+    $(window).scroll(function() {
+       if ($(document).scrollTop() > 800) {
+       	$('#ads_right').removeClass('hide_ads_right').addClass('show_ads_right');
+       } else if ($(window).scrollTop() < 800) {
+       	$('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
+       }
+    });
 
-    // 			nextBanner();
-    // 		});
-    // 	}, 5000);
-
-    // }
-
-    // nextBanner();
+    $(window).scroll(function() {
+       if ($(document).scrollTop() > 3250) {
+       	$('#ads_right').removeClass('show_ads_right').addClass('hide_ads_right');
+       } 
+    });
 
 })
 
 
 
-// $(document).ready(function() {
-// 	$('#previous').on('click', function() {
-// 		$('#im_' + currentImage).stop().fadeOut(1);
-// 		decreaseImage();
-// 		$('#im_' + currentImage).stop().fadeIn(1);
-// 	});
-// 	$('#next').on('click', function() {
-// 		$('#im_' + currentImage).stop().fadeOut(1);
-// 		increaseImage();
-// 		$('#im_' + currentImage).stop().fadeIn(1);
-// 	});
-
-// 	var currentImage = 1;
-// 	var totalImages = 5;
-
-// 	function increaseImage() {
-// 		++currentImage;
-// 		if(currentImage > totalImages) {
-// 			currentImage = 1;
-// 		}
-// 	}
-
-// 	function decreaseImage() {
-// 		--currentImage;
-// 		if(currentImage < 1) {
-// 			currentImage = totalImages;
-// 		}
-// 	}
-// });
