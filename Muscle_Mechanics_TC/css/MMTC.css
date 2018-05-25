@@ -228,17 +228,14 @@ nav a:hover {
   }
 }
 
-
-
 #options {
   width: 100%;
-
 }
 
 #options .nav_options {
   position: relative;
   float: left;
-  width: 32.85%;
+  width: 32.86%;
   height: 30vh;
   text-align: center;
   margin: 5px;
@@ -284,7 +281,7 @@ nav a:hover {
 
 #section_one .section_wrap,
 #section_two .section_wrap {
-  width: 99%;
+  width: 100%;
 }
 
 /* -- Section One -- */
@@ -358,6 +355,7 @@ nav a:hover {
 
 #section_one .section_wrap .right_side p {
   line-height: 30px;
+  padding-right: 60px;
 }
 
 /* -- Section Two -- */
@@ -400,6 +398,7 @@ nav a:hover {
 }
 
 .Info_slides {
+  width: 100%;
   background: url('..img/section3Background.jpg');
   padding-bottom: 20px;
 }
