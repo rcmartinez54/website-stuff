@@ -1,0 +1,400 @@
+/*---- Universal rules  ---*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  background: #fff;
+}
+
+#container {
+  max-width: 90em;
+  margin: 0 auto;
+}
+
+.clearfix::before {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*--- Navigation bar  ---*/
+
+header {
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+  padding: .625em 0;
+  position: fixed;
+  width: 90em;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+
+.scroll {
+  background-color: #000;
+  padding: .625em 0;
+  position: fixed;
+  width: 90em;
+  top: 0;
+  z-index: 10;
+  transition: all 3s;
+}
+
+.header img {
+  display: inline;
+  margin-left: 20px;
+  width: 5%;
+}
+
+.header nav {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  padding-top: 15px;
+}
+
+nav ul {
+  margin: 0;
+  display: inline;
+  padding-right: 1.125em;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 45px;
+  padding-right: 20px;
+  padding-top: 12px;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  padding-bottom: 0;
+  border-bottom: 2px solid transparent;
+  transition: all .3s;
+}
+
+nav a:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fa8000;
+  color: #fff;
+}
+
+.header ul li {
+  padding-left: 2.25em;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 96%;
+  }
+  .header img {
+    display: none;
+  }
+  .header ul li {
+    padding-left: 0;
+  }
+  nav {
+    padding: 0;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    text-decoration: none;
+  }
+  nav ul {
+    margin: 0;
+    padding: .10em;
+  }
+  nav li {
+    background-color: lightgray;
+    border-radius: .5em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: .60em;
+    list-style: none;
+    width: 90%;
+  }
+  nav a {
+    padding: 1em;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .header img {
+    display: none;
+  }
+  .nav ul {
+    text-align: center;
+  }
+  .nav ul li {
+    list-style: none;
+  }
+}
+
+/*--- Banner  ---*/
+
+.banner {
+  height: 90vh;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+  background: url('../img/purpose3.jpg');
+  background-size: cover;
+}
+
+.banner .brand .brand_img {
+  float: left;
+  width: 10%;
+  padding: 20px;
+}
+
+.banner .brand .brand_img img {
+  width: 80%;
+}
+
+.banner .brand .brand_words {
+  float: left;
+  width: 14%;
+  padding: 10px;
+  color: #fff;
+}
+
+.banner .banner_words {
+  text-transform: uppercase;
+  padding-top: 16em;
+}
+
+.banner h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: yellow; 
+  text-shadow: 2px 2px 10px #000;
+  font-size: 115px;
+  font-weight: 300;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  div.banner-text {
+    padding-top: 30em;
+  }
+  div.banner-text h2 {
+    margin-left: 1em;
+  }
+}
+
+#options {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#options .nav_options {
+  position: relative;
+  float: left;
+  width: 32.86%;
+  height: 30vh;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#options .home {
+  margin-left: 0px;
+  background: url('../img/dumbell.jpeg');
+  background-size: cover;
+}
+
+#options .nutrition {
+  background: url('../img/nutrition.jpeg');
+  background-size: cover;
+}
+
+#options .strength {
+  margin-right: 0px;
+  background: url('../img/strengthTraining.jpeg');
+  background-size: cover;
+}
+
+#options .nav_options h3 {
+  display: block;
+  padding-top: 70px;
+  color: white;
+}
+
+#options .nav_options:hover {
+  opacity: 0.5;
+}
+
+/* -- Section One -- */
+
+#one .food h2 {
+  font-size: 34px;
+  padding: 20px;
+  background: skyblue;
+  font-family: 'Dosis', sans-serif;
+}
+
+#one {
+  width: 63%;
+  margin: auto;
+}
+
+#one .food_img {
+  width: 100%;
+}
+
+#one .food_img img {
+  width: 100%;
+}
+
+#one .breakfast {
+  margin: 0 auto;
+}
+
+#one .lunch {
+  margin: 0 auto;
+}
+
+#one .dinner {
+  margin: 0 auto;
+}
+
+#one table {
+  width: 100%;
+}
+
+#one table th {
+  padding: 20px;
+  font-size: 24px;
+  background: skyblue;
+}
+
+#one table td {
+  padding: 15px;
+  padding-left: 50px;
+  background: lightgray;
+}
+
+#two {
+  width: 100%;
+}
+
+#two .snack_head {
+  margin-top: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+#two .snacks {
+  height: 450px;
+  margin-top: 100px;
+  float: left;
+  width: 33%;
+}
+
+#two .snacks h3 {
+  color: #fff;
+  padding-top: 130px;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+#two .mix {
+  background: url('../img/trailmix.png') no-repeat;
+  background-size: contain;
+}
+
+#two .fruit {
+  background: url('../img/fruit.jpg') no-repeat;
+  background-size: contain;
+}
+
+#two .yogurt {
+  background: url('../img/yogurt.png') no-repeat;
+  background-size: contain;
+}
+
+.hide_ads_left {
+  width: 225px;
+  position: fixed;
+  top: 300px;
+  left: -300px;
+  transition: all .5s;
+}
+
+.show_ads_left {
+  width: 225px;
+  position: fixed;
+  top: 300px;
+  left: 20px;
+  transition: all .5s;
+}
+
+.hide_ads_right {
+  width: 225px;
+  position: fixed;
+  top: 300px;
+  right: -300px;
+  transition: all .5s;
+}
+
+.show_ads_right {
+  width: 225px;
+  position: fixed;
+  top: 300px;
+  right: 20px;
+  transition: all .5s;
+}
+
+.size img {
+  width: 100%;
+}
+
+/* -- Footer -- */
+
+footer {
+  background: gray;
+  color: yellow;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social_media {
+  margin: auto;
+}
+
+footer .social_media img {
+  padding: 10px;
+  width: 8%;
+}
