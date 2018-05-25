@@ -294,9 +294,9 @@ nav a:hover {
 }
 
 .two_change {
-  background: linear-gradient(to bottom, #fff 0.9%, lightgray, #fff);
+  background: linear-gradient(to bottom, #fff 0.9%, #e6e6e6, #fff);
   color: #000;
-  transition: all 3s;
+  transition: all 5s;
 }
 
 #two .philosophy h2 {
