@@ -164,7 +164,7 @@ nav a:hover {
   border-bottom: 1px solid #fff;
   position: relative;
   z-index: 1;
-  background: url('../img/grub.jpg');
+  background: url('../img/mmtc_wod.jpg');
   background-size: cover;
 }
 
@@ -185,7 +185,6 @@ nav a:hover {
 }
 
 .banner .banner_words {
-  padding-top: 9.575em;
   text-transform: uppercase;
 }
 
@@ -195,10 +194,10 @@ nav a:hover {
   margin-right: 200px;
   margin-left: 200px;
   color: yellow; 
-  text-shadow: 2px 2px 10px #000;
+  text-shadow: 10px 20px 10px #000;
   font-size: 115px;
   font-weight: 300;
-  opacity: 1;
+  word-spacing: 30px;
 }
 
 .banner h2 {
@@ -230,6 +229,15 @@ nav a:hover {
   z-index: 1;
 }
 
+// #options:after {
+//   content: '';
+//   position: absolute;
+//   top: 0px;
+//   left: 25%;
+//   width: 75%;
+//   border-bottom: 1px solid black;
+// }
+
 #options .nav_options {
   position: relative;
   float: left;
@@ -246,8 +254,8 @@ nav a:hover {
   background-size: cover;
 }
 
-#options .strength {
-  background: url('../img/strengthTraining.jpeg');
+#options .nutrition {
+  background: url('../img/nutrition.jpeg');
   background-size: cover;
 }
 
@@ -279,13 +287,14 @@ nav a:hover {
 #one {
   width: 63%;
   margin: auto;
+  position: relative;
 }
 
-#one .food_img {
+#one .wod_img {
   width: 100%;
 }
 
-#one .food_img img {
+#one .wod_img img {
   width: 100%;
 }
 
@@ -313,8 +322,8 @@ nav a:hover {
 
 #one table td {
   padding: 15px;
-  padding-left: 50px;
   background: lightgray;
+  text-align: center;
 }
 
 #two {
@@ -401,6 +410,7 @@ footer {
   color: yellow;
   padding: 20px;
   text-align: center;
+  margin-top: 30px;
 }
 
 footer .social_media {
