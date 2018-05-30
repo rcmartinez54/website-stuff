@@ -14,7 +14,7 @@ html {
 }
 
 #container {
-  max-width: 90em;
+  max-width: 75em;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ header {
   border-bottom: 1px solid #fff;
   padding: .625em 0;
   position: fixed;
-  width: 90em;
+  width: 75em;
   top: 0;
   z-index: 10;
   display: none;
@@ -55,7 +55,7 @@ header {
   background-color: #000;
   padding: .625em 0;
   position: fixed;
-  width: 90em;
+  width: 75em;
   top: 0;
   z-index: 10;
   transition: all 3s;
@@ -110,6 +110,7 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+
   header {
     width: 96%;
   }
@@ -143,19 +144,37 @@ nav a:hover {
     padding: 1em;
     text-decoration: none;
   }
+
 }
 
-@media (max-width: 770px) {
+// @media (max-width: 770px) {
+  
+//   .header img {
+//     display: none;
+//   }
+//   .nav ul {
+//     text-align: center;
+//   }
+//   .nav ul li {
+//     list-style: none;
+//   }
+// }
+ @media (max-width: 560px) {
+  
+ }
+
+
+@media (max-width: 900px) {
+ 
+  .header {
+    width: 57em;
+  }
   .header img {
-    display: none;
-  }
-  .nav ul {
-    text-align: center;
-  }
-  .nav ul li {
-    list-style: none;
+    width: 7%;
   }
 }
+
+
 
 /*--- Banner  ---*/
 
@@ -164,7 +183,7 @@ nav a:hover {
   border-bottom: 1px solid #fff;
   position: relative;
   z-index: 1;
-  background: url('../img/mmtc_wod.jpg');
+  background: url('../img/mmtc_wod2.jpg');
   background-size: cover;
 }
 
@@ -182,6 +201,7 @@ nav a:hover {
   float: left;
   width: 14%;
   padding: 10px;
+  color: #fff;
 }
 
 .banner .banner_words {
@@ -195,24 +215,11 @@ nav a:hover {
   margin-left: 200px;
   color: yellow; 
   text-shadow: 10px 20px 10px #000;
-  font-size: 115px;
+  font-size: 90px;
   font-weight: 300;
   word-spacing: 30px;
 }
 
-.banner h2 {
-  padding-top: 1em;
-  text-align: center;
-  color: white;
-  font-weight: 300;
-  font-size: 80px;
-}
-
-.banner h1 span, 
-.banner h2 span {
-  display: block;
-  font-size: 30px;
-}
 
 @media (max-width: 480px) {
   div.banner-text {
@@ -223,25 +230,44 @@ nav a:hover {
   }
 }
 
+@media (max-width: 560px) {
+  .banner h1 {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 77px;
+  }
+  .banner .brand .brand_words {
+    width: 35%;
+  }
+  .banner .brand .brand_img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner h1 {
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 80px;
+  }
+  .banner .brand .brand_words {
+    width: 25%;
+  }
+  .banner .brand .brand_img {
+    width: 15%;
+  }
+}
+
 #options {
   width: 100%;
   position: relative;
   z-index: 1;
 }
 
-// #options:after {
-//   content: '';
-//   position: absolute;
-//   top: 0px;
-//   left: 25%;
-//   width: 75%;
-//   border-bottom: 1px solid black;
-// }
-
 #options .nav_options {
   position: relative;
   float: left;
-  width: 32.86%;
+  width: 33.05%;
   height: 30vh;
   text-align: center;
   margin: 5px;
@@ -265,14 +291,36 @@ nav a:hover {
   background-size: cover;
 }
 
+#options .left, #options .right {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 #options .nav_options h3 {
   display: block;
   padding-top: 70px;
   color: white;
 }
 
+.overlay {
+  background: yellow;
+  opacity: 0.4;
+}
+
 #options .nav_options:hover {
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+@media (max-width: 900px) {
+  #options .nav_options {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  #options .nav_options h3 {
+    margin-top: 0;
+  }
 }
 
 /* -- Section One -- */
@@ -326,47 +374,6 @@ nav a:hover {
   text-align: center;
 }
 
-#two {
-  width: 100%;
-}
-
-#two .snack_head {
-  margin-top: 150px;
-  width: 100%;
-  text-align: center;
-}
-
-
-
-#two .snacks {
-  height: 450px;
-  margin-top: 100px;
-  float: left;
-  width: 33%;
-}
-
-#two .snacks h3 {
-  color: #fff;
-  padding-top: 130px;
-  text-align: center;
-  text-shadow: 2px 2px 10px black;
-}
-
-#two .mix {
-  background: url('../img/trailmix.png') no-repeat;
-  background-size: contain;
-}
-
-#two .fruit {
-  background: url('../img/fruit.jpg') no-repeat;
-  background-size: contain;
-}
-
-#two .yogurt {
-  background: url('../img/yogurt.png') no-repeat;
-  background-size: contain;
-}
-
 .hide_ads_left {
   width: 225px;
   position: fixed;
@@ -401,6 +408,13 @@ nav a:hover {
 
 .size img {
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  #ads_left,
+  #ads_right {
+    width: 130px;
+  }
 }
 
 /* -- Footer -- */
