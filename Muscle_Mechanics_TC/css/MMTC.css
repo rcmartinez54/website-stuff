@@ -102,7 +102,7 @@ nav a {
 nav a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #fa8000;
-  color: ##fa8000;
+  color: #fa8000;
 }
 
 .header ul li {
@@ -110,6 +110,10 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+  html {
+    width: 90em;
+  }
+  
   header {
     width: 96%;
   }
@@ -173,6 +177,7 @@ nav a:hover {
   z-index: 1;
   background: url('../img/kettleBell.jpg');
   background-size: cover;
+  max-height: 100%;
 }
 
 // .banner:after {
@@ -229,7 +234,7 @@ nav a:hover {
 }
 
 #options {
-  width: 100%;
+  max-width: 100%;
 }
 
 #options .nav_options {
@@ -367,8 +372,8 @@ nav a:hover {
   margin: auto;
   padding-top: 40px;
   font-size: 1.1em;
-  background: url('../img/section_background.jpg');
-  background-size: cover;
+  // background: url('../img/section_background.jpg');
+  // background-size: cover;
 }
 
 #section_two .mmInfo {
