@@ -159,7 +159,7 @@ nav a:hover {
 //     list-style: none;
 //   }
 // }
- @media (max-width: 560px) {
+ @media (max-width: 600px) {
   
  }
 
@@ -199,7 +199,7 @@ nav a:hover {
 
 .banner .brand .brand_words {
   float: left;
-  width: 14%;
+  width: 20%;
   padding: 10px;
   color: #fff;
 }
@@ -230,11 +230,11 @@ nav a:hover {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .banner h1 {
-    margin-left: 35px;
-    margin-right: 35px;
-    font-size: 77px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 60px;
   }
   .banner .brand .brand_words {
     width: 35%;
@@ -244,22 +244,22 @@ nav a:hover {
   }
 }
 
-@media (max-width: 900px) {
-  .banner h1 {
-    margin-left: 60px;
-    margin-right: 60px;
-    font-size: 80px;
-  }
-  .banner .brand .brand_words {
-    width: 25%;
-  }
-  .banner .brand .brand_img {
-    width: 15%;
-  }
-}
+// @media (max-width: 900px) {
+//   .banner h1 {
+//     margin-left: 60px;
+//     margin-right: 60px;
+//     font-size: 80px;
+//   }
+//   .banner .brand .brand_words {
+//     width: 25%;
+//   }
+//   .banner .brand .brand_img {
+//     width: 15%;
+//   }
+// }
 
 #options {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -267,10 +267,9 @@ nav a:hover {
 #options .nav_options {
   position: relative;
   float: left;
-  width: 33.05%;
+  width: 33.3%;
   height: 30vh;
   text-align: center;
-  margin: 5px;
   cursor: pointer;
 }
 
@@ -300,11 +299,6 @@ nav a:hover {
   display: block;
   padding-top: 70px;
   color: white;
-}
-
-.overlay {
-  background: yellow;
-  opacity: 0.4;
 }
 
 #options .nav_options:hover {
@@ -375,7 +369,7 @@ nav a:hover {
 }
 
 .hide_ads_left {
-  width: 225px;
+  width: 180px;
   position: fixed;
   top: 300px;
   left: -300px;
@@ -383,15 +377,15 @@ nav a:hover {
 }
 
 .show_ads_left {
-  width: 225px;
+  width: 180px;
   position: fixed;
   top: 300px;
-  left: 20px;
+  left: 22px;
   transition: all .5s;
 }
 
 .hide_ads_right {
-  width: 225px;
+  width: 180px;
   position: fixed;
   top: 300px;
   right: -300px;
@@ -399,15 +393,26 @@ nav a:hover {
 }
 
 .show_ads_right {
-  width: 225px;
+  width: 180px;
   position: fixed;
   top: 300px;
-  right: 20px;
+  right: 22px;
   transition: all .5s;
 }
 
 .size img {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  #ads_left,
+  #ads_right {
+    display: none;
+  }
+
+  #one {
+    width: 98%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -433,5 +438,5 @@ footer .social_media {
 
 footer .social_media img {
   padding: 10px;
-  width: 8%;
+  width: 10%;
 }
