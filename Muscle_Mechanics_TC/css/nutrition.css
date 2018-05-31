@@ -9,6 +9,10 @@ a {
   color: black;
 }
 
+p {
+  text-align: justify;
+}
+
 html {
   background: #fff;
 }
@@ -233,11 +237,11 @@ nav a:hover {
 #options .nav_options {
   position: relative;
   float: left;
-  width: 32.86%;
+  width: 33.33%;
   height: 30vh;
   text-align: center;
-  margin: 5px;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 
 #options .home {
