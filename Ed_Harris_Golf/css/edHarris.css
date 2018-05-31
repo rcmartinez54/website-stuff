@@ -1,0 +1,709 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+	background: url('../img/pageBackground.jpeg');
+	background-size: cover;
+	font-family: 'Playfair Display', serif;
+}
+
+body {
+	text-align: center;
+}
+
+header {
+	padding: 15px 0;
+	font-size: 1.2em;
+
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+.header_img {
+	float: left;
+	width: 27%;
+}
+
+.header_text {
+	float: left;
+	width: 48%;
+}
+
+nav {
+	background: #2196F3;
+	height: 42px;
+	margin-bottom: 50px;
+	max-width: 100%;
+}
+
+nav ul {
+	margin-left: -18px;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	padding: 10px 45px;
+	margin-left: 0px;
+	background: #2196F3;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+nav ul li:hover {
+	background: darkblue;
+	transition: all 3s;
+}
+
+#media {
+	background: #2196F3;
+	color: #fff;
+	position: relative;
+	display: none;
+}
+
+.media_menu {
+	background: #fff;
+}
+
+.media_menu img {
+	width: 10%;
+	float: left;
+	padding: 20px;
+}
+
+.media_menu img:hover {
+	background: blue;
+}
+
+.media_menu p {
+	float: left;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+.media_menu .close {
+	display: none;
+}
+
+.media_nav {
+	background: #ff;
+	position: absolute;
+	display: none;
+	top: 80px;
+	left: 0px;
+	z-index: 2;
+}
+
+.media_nav ul {
+	margin: auto;
+	padding: 0;
+}
+
+.media_nav ul li {
+	float: none;
+	width: 100%;
+	border-radius: 0px;
+	text-decoration: none;
+	list-style: none;
+	background: #2196F3;
+	padding: 15px;
+	color: #fff;
+}
+
+.media_nav ul li:hover {
+	background: blue;
+	transition: all 3s;
+}
+
+.media_nav ul a {
+	text-decoration: none;
+}
+
+footer {
+	background: lightgray;
+	max-width: 1200px;
+	margin: auto;
+	border-top: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+footer .socMed {
+	float: right;
+	width: 3%;
+	height: 3%;
+	padding: 8px;
+	margin-top: 2px;
+}
+
+footer img {
+	float: left;
+	width: 8%;
+	height: 8%;
+	padding: 10px;
+
+}
+
+/* -- Home Styles -- */
+
+#home_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.home_wrap {
+	width: 80%;
+	margin: auto;
+}
+
+.home_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
+}
+
+.home_wrap .right_content {
+	margin-top: 32px;
+	float: left;
+	width: 28%;
+}
+
+.home_wrap .right_content img {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+/* -- Contact Styles -- */
+
+#contact_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 900px;
+	background: linear-gradient(to bottom, white 70%, transparent), url('../img/shagBag.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.contact_info_wrap {
+	width: 60%;
+	margin: auto;
+}
+
+.contact_info_wrap .left_content {
+	float: left;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
+	width: 48%;
+}
+
+.contact_info_wrap .right_content {
+	margin-top: 32px;
+	float: left;
+	width: 40%;
+}
+
+/* -- Hours Styles -- */
+
+.hours_wrap {
+	width: 62%;
+	margin: auto;
+}
+
+.hours_left_content {
+	float: left;
+	width: 45%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+}
+
+.hours_right_content {
+	margin-top: 20px;
+	float: left;
+	width: 45%;
+}
+
+/* -- Schools Styles -- */
+
+#schools_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1290px;
+	background: linear-gradient(to bottom, white 85%, transparent), url('../img/schools_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.schools_wrap {
+	width: 93%;
+	margin: auto;
+}
+
+.schools_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
+}
+
+.schools_wrap .left_content p {
+	text-align: left;
+	font-size: 18px;
+}
+
+.schools_wrap .right_content img {
+	margin-top: 40px;
+	border-radius: 5px;
+}
+
+.schools_wrap .right_content .bottom_image {
+	margin-top: 100px;
+}
+
+/* -- Lessons Styles -- */
+
+#lessons_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 950px;
+	background: linear-gradient(to bottom, white 87%, transparent), url('../img/school_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.lessons_wrap {
+	width: 85%;
+	margin: auto;
+}
+
+.lessons_wrap .left_content {
+	float: left;
+	width: 60%;
+	margin: 0 10px;
+	padding: 0 24px 0;
+	font-size: 22px;
+	text-align: left;
+}
+
+.lessons_wrap .right_content {
+	margin-top: 32px;
+	float: left;
+	width: 28%;
+}
+
+.lessons_wrap .right_content img {
+	border-radius: 5px;
+}
+
+.lessons_wrap .left_content ul {
+	text-align: center;
+	margin: auto;
+}
+
+.lessons_wrap .left_content ul li {
+	list-style: none;
+	text-align: left;
+}
+
+/* -- Reservations Styles -- */
+
+#reservations_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1000px;
+	background: linear-gradient(to bottom, white 45%, transparent), url('../img/reservations_background.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.reservations_wrap {
+	margin: auto;
+	width: 90%;
+}
+
+.reservations_wrap .left_content {
+	float: left;
+	width: 31%;
+}
+
+.reservations_wrap .left_content p {
+	font-size: 12px;
+	text-align: left;
+}
+
+.boxes {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    text-align: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxes input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid black;
+}
+
+.boxes:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.boxes input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.boxes input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.boxes .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.reservations_wrap .center_content {
+	float: left;
+	width: 31%;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.reservations_wrap .center_content form input {
+	padding: 10px;
+	margin: 20px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.reservations_wrap .center_content form textarea {
+	padding: 20px;
+	margin: 10px;
+	width: 75%;
+	border-radius: 5px;
+}
+
+.reservations_wrap .center_content form button {
+	padding: 10px;
+	width: 50%;
+	margin: 10px;
+	border-radius: 5px;
+	background: #2196F3;
+	color: white;
+	border: 1px solid black;
+}
+
+.reservations_wrap .right_content {
+	float: left;
+	width: 31%;
+	margin-top: 70px;
+}
+
+.reservations_wrap .right_content img {
+	width: 50%;
+	margin-left: 70px;
+}
+
+/* -- Private Lessons Styles --*/
+
+#privateLessons_content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1000px;
+	background: linear-gradient(to bottom, white 50%, transparent), url('../img/privateLesson.jpeg');
+	background-size: cover;
+}
+
+
+.privateLessons_wrap {
+	margin: auto;
+	width: 80%;
+}
+
+.privateLessons_wrap .top_content {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.privateLessons_wrap .bottom_left_content {
+	float: left;
+	width: 60%;
+	font-size: 20px;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th:first-child {
+	border-top-left-radius: 5px;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th:last-child {
+	border-top-right-radius: 5px;
+}
+
+.privateLessons_wrap .bottom_left_content table .left_align {
+	text-align: left;
+}
+
+.privateLessons_wrap .bottom_left_content table tr th {
+	padding: 10px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	background: #2196F3;
+	color: white;
+}
+
+.privateLessons_wrap .bottom_left_content table tr td {
+	padding: 10px;
+}
+
+.privateLessons_wrap table tr:nth-child(odd) {
+	background: #bfbfbf;
+	color: black;
+}
+
+.privateLessons_wrap table tr:nth-child(even) {
+	background: #ddd;
+	color: black;
+}
+
+.privateLessons_wrap .bottom_right_content {
+	float: right;
+	width: 37%;
+}
+
+.privateLessons_wrap .bottom_right_content img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+@media (max-width: 1025px) {
+	nav ul {
+		margin-left: 40px;
+	}
+	nav ul li {
+		padding: 10px 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	nav ul {
+		margin: auto;
+		margin-left: 30px;
+	}
+	nav ul li {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+	.privateLessons_wrap .top_content {
+		font-size: 16px;
+	}
+	.privateLessons_wrap .bottom_right_content {
+		float: none;
+		margin: auto;
+	}
+	.privateLessons_wrap .bottom_left_content {
+		float: none;
+		font-size: 12px;
+		margin: auto;
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_left_content table {
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_right_content {
+		width: 100%;
+	}
+	.privateLessons_wrap .bottom_right_content img {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	header {
+		font-size: 12px;
+		padding-bottom: 0px;
+	}
+	header .header_img img {
+		width: 70%;
+	}
+	header .header_pga img {
+		width: 20%;
+	}
+	nav {
+		display: none;
+	}
+	.content_heading h1 {
+		font-size: 18px;
+		padding: 0 20px;
+		margin-bottom: 0px;
+	}
+	.privateLessons_wrap {
+		width: 95%;
+	}
+	.privateLessons_wrap .top_content {
+		margin-bottom: 5px;
+	}
+	#media {
+		display: block;
+	}
+	.schools_content_wrap {
+		height: 2500px;
+	}
+	.schools_wrap {
+		width: 95%;
+		
+	}
+	.schools_wrap .left_content {
+		width: 98%;
+		float: none;
+		padding: 0px;
+		margin: 0 auto;
+	}
+	.schools_wrap .left_content h2 {
+		font-size: 18px;
+		padding: 0px;
+		font-weight: bolder;
+	}
+	.schools_wrap .left_content p {
+		font-size: 14px;
+	}
+	.schools_wrap .right_content {
+		float: none;
+		width: 98%;
+	}
+	.schools_wrap .right_content img {
+		width: 40%;
+		margin-top: 5px;
+	}
+	.schools_wrap .right_content .top_image {
+		display: none;
+	}
+	.schools_wrap .right_content .bottom_image {
+		margin-top: 0px;
+	}
+	.reservations_wrap .left_content {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.reservations_wrap .center_content {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+	.reservations_wrap .left_content label {
+		font-size: 16px;
+	}
+	.reservations_wrap .center_content form input {
+		margin: 5px;
+	}
+	.reservations_wrap .right_content {
+		display: none;
+	}
+	.home_wrap {
+		width: 95%;
+	}
+	.home_wrap .left_content {
+		float: none;
+		margin-bottom: 5px;
+		width: 95%;
+		padding: 0px;
+		font-size: 17px;
+	}
+
+	.home_wrap .right_content {
+		float: none;
+		width: 90%;
+		margin: auto;
+	}
+
+	.home_wrap .right_content img {
+		width: 40%;
+	}
+
+	.home_wrap .right_content p {
+		background: #2196F3;
+		color: #fff;
+		border-radius: 5px;
+		padding: 7px;
+	}
+	.lessons_wrap {
+		width: 95%;
+	}
+	.lessons_wrap .left_content {
+		width: 95%;
+		padding: 0px;
+		float: none;
+		font-size: 18px;
+	}
+	.lessons_wrap .left_content ul {
+		padding: 0px;
+	}
+	.lessons_wrap .right_content {
+		width: 95%;
+		padding: 20px 0 0 0;
+		float: none;
+		margin: auto;
+	}
+	.lessons_wrap .right_content img {
+		width: 22%;
+	}
+	.lessons_wrap .right_content p {
+		background: #2196F3;
+		color: #fff;
+		padding: 10px;
+		border-radius: 5px;
+	}
+}
