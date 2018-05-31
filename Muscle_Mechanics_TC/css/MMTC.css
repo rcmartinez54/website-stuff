@@ -9,12 +9,16 @@ a {
   color: black;
 }
 
+p {
+  text-align: justify;
+}
+
 html {
   background: #fff;
 }
 
 #container {
-  max-width: 75em;
+  max-width: 90em;
   margin: 0 auto;
 }
 
@@ -45,7 +49,7 @@ header {
   border-bottom: 1px solid #fff;
   padding: .625em 0;
   position: fixed;
-  width: 75em;
+  width: 90em;
   top: 0;
   z-index: 10;
   display: none;
@@ -237,10 +241,11 @@ nav a:hover {
 #options .nav_options {
   position: relative;
   float: left;
-  width: 33.3%;
+  width: 33.33%;
   height: 30vh;
   text-align: center;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 
 
@@ -368,8 +373,6 @@ nav a:hover {
   margin: auto;
   padding-top: 40px;
   font-size: 1.1em;
-  // background: url('../img/section_background.jpg');
-  // background-size: cover;
 }
 
 #section_two .mmInfo {
@@ -399,7 +402,8 @@ nav a:hover {
 }
 
 .Info_slides {
-  max-width: 100%;
+  max-width: 95%;
+  margin: auto;
   background: url('..img/section3Background.jpg');
   padding-bottom: 20px;
 }
@@ -414,6 +418,7 @@ nav a:hover {
   float: left;
   width: 33.3%;
   height: 500px;
+  border: 2px solid #fff;
 }
 
 .Info_slides .info_imgs .photo img {
@@ -503,6 +508,7 @@ nav a:hover {
   font-size: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
 }
 
 #section_three .section_wrap {

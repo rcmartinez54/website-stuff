@@ -9,6 +9,10 @@ a {
   color: black;
 }
 
+p {
+  text-align: justify;
+}
+
 html {
   background: #fff;
 }
@@ -187,7 +191,7 @@ nav a:hover {
 
 .banner .banner_words {
   text-transform: uppercase;
-  padding-top: 16em;
+  padding-top: 5em;
 }
 
 .banner h1 {
@@ -223,8 +227,8 @@ nav a:hover {
   width: 32.86%;
   height: 30vh;
   text-align: center;
-  margin: 5px;
   cursor: pointer;
+  border: 2px solid #fff;
 }
 
 #options .home {
