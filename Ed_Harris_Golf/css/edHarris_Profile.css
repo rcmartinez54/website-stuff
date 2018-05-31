@@ -1,0 +1,107 @@
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+html {
+	background: url('../img/pageBackground.jpeg');
+	background-size: cover;
+	font-family: 'Playfair Display', serif;
+
+}
+
+body {
+	text-align: center;
+}
+
+#content_wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 1300px;
+	background: white;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+header {
+	padding: 20px 0;
+}
+
+.header_img {
+	float: left;
+	width: 27%;
+}
+
+.header_text {
+	float: left;
+	width: 48%;
+}
+
+
+nav ul {
+	margin-left: -20px
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	padding: 10px 45px;
+	margin-left: 0px;
+	background: #2196F3;
+	color: white;
+	border-radius: 5px;
+	margin-right: 5px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.top_content_profile {
+	font-size: 16px;
+	width: 70%;
+	text-align: left;
+	font-size: 20px;
+	margin: auto;
+}
+
+.bottom_content_profile  {
+	margin-top: 38px;
+	padding-top: 28px;
+	width: 70%;
+	margin: auto;
+}
+
+.star_images {
+	float: left;
+	width: 33%;
+}
+
+.star_images img {
+	height: 227px;
+	border-radius: 5px;
+}
+
+footer {
+	background: lightgray;
+	max-width: 1200px;
+	margin: auto;
+	border-top: 1px solid black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+footer .socMed {
+	float: right;
+	width: 3%;
+	height: 3%;
+	padding: 8px;
+	margin-top: 2px;
+}
+
+footer img {
+	float: left;
+	width: 8%;
+	height: 8%;
+	padding: 10px;
+
+}

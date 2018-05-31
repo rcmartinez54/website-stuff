@@ -1,0 +1,354 @@
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+header  {
+	color: lightcyan;
+	background: url('../img/web.jpeg') fixed;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Lato', Sans-Serif;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	text-transform: uppercase;
+	float: left;
+	padding: 40px;
+	
+}
+
+nav ul a li {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+nav ul li:hover {
+	border-bottom: 3px solid red;
+}
+
+#header_content_container {
+	margin: 0 200px;
+	padding: 200px 0;
+}
+
+#to_top {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#to_top a {
+	text-decoration: none;
+	color: black;
+}
+
+@media (max-width: 1020px) {
+	#header_content_container {
+		margin: 0 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		height: 80vh;
+	}
+}
+
+@media (max-width: 413px) {
+	header {
+		height: 40vh;
+	}
+}
+
+body {
+	font-family: 'Catamaran', Sans-Serif;
+	font-size: 16px;
+
+}
+
+.intro {
+	font-size: 65px;
+}
+
+.what_i_do {
+	float: right;
+	font-size: 44px;
+	margin-top: 30px;
+}
+
+h1 {
+	float: right;
+}
+
+.section-title {
+	text-transform: uppercase;
+}
+
+.one {
+	background: white;
+	background-size: cover;
+	height: 80vh;
+}
+
+.one_heading {
+	padding: 70px 270px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.work {
+	text-align: center;
+	margin: 0 170px;
+}
+
+.work1 {
+	float: left;
+	width: 35%;
+	padding: 15px;
+	background: white;
+	margin: 10px;
+	font-size: 1.3em;
+}
+
+.work1 img {
+	width: 150px;
+}
+
+.work2 {
+	float: right;
+	width: 35%;
+	padding: 15px;
+	background: white;
+	margin: 10px;
+	font-size: 1.3em;
+}
+
+.work2 img {
+	width: 185px;
+}
+
+.work2 p {
+	text-decoration: italic;
+}
+
+.work2 ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+
+.hide {
+	display: none;
+}
+
+@media (max-width: 1020px) {
+
+	.work {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.work1, .work2 {
+		float: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.one_heading {
+		padding: 22px 130px;
+	}
+
+	.hide {
+		display: block;
+	}
+
+	ul {
+		display: none;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	.one {
+		height: 118vh;
+	}
+}
+
+@media (max-width: 414px) {
+	.one {
+		height: 40vh;
+	}
+}
+
+.two {
+	height: 100vh;
+	background: linear-gradient(to bottom, gray, transparent), url('../img/two_background6.jpeg') fixed;
+	background-size: cover;
+}
+
+.two_p {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 3em;
+	padding: 60px 20px 0;
+}
+
+@media (max-width: 414px) {
+	.two {
+		height: 38vh;
+	}
+}
+
+#showContainer {
+	width: 640px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding-top: 20px;
+}
+
+.navButton {
+	cursor: pointer;
+	float: left;
+	width: 25px;
+	height: 22px;
+	padding: 10px;
+	margin-right: 5px;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	background: #000000;
+	opacity: 0.65;
+	user-select: none;
+}
+
+.navButton:hover {
+	opacity: 1;
+}
+
+.caption {
+	float: right;
+}
+
+.imageContainer:not(:first-child) {
+	display: none;
+}
+
+.slide_img {
+	width: 100%;
+}
+
+.three {
+	height: 75vh;
+	background-color: white;
+}
+
+.form_heading {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+	width: 50%;
+	float: left;
+}
+
+form {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	padding: 20px 140px;
+}
+
+input, textarea {
+	background: #f2f2f2;
+    padding: 10px;
+    font-size: 25px;
+	width: 100%;
+	margin-top: 30px;
+	border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border: none;
+}
+
+textarea {
+	border: none;
+}
+
+.submit_button {
+	background: gray;
+	color: white;
+	width: 50%;
+    float: right;
+    padding: 30px;
+}
+
+@media (max-width: 1020px) {
+	form {
+		padding: 20px 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	.three {
+		height: 110vh;
+	}
+
+	.form_heading {
+		float: none;
+
+	}
+}
+
+@media (max-width: 414px) {
+	.three {
+		height: 35vh;
+	}
+}
+
+footer {
+	height: 18vh;
+	background: gray;
+	margin-top: 0;
+	color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+footer h2 {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.footer_imgs {
+	text-align: center;
+}
+
+footer img {
+	width: 40px;
+	margin: 10px;
+}
+
+@media (max-width: 414px) {
+	footer {
+		height: 10vh;
+	}
+}
